@@ -1,0 +1,20 @@
+`timescale 1ns/1ns
+module TestBench();
+  
+    parameter NO_INV_STAGE = 3;
+    parameter INVERTER_DELAY = 2;
+    
+    reg en_i = 0;
+  
+    RingOscillator #(.NO_STAGES(NO_INV_STAGE),
+                      .INV_DELAY_ns(INVERTER_DELAY)
+                      ) DUT(.en(en_i)
+                      );
+                     
+    initial begin
+        en_i = 0;
+        #10 en_i = 1;
+        #200 
+        $stop;
+    end
+endmodule

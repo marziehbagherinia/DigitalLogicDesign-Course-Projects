@@ -1,0 +1,21 @@
+Circuit: * C:\Users\ASUS\Documents\LTspiceXVII\Draft4.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Aug 11 00:34:05 2020
+Total elapsed time: 0.062 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 5869
+traniter = 5861
+tranpoints = 1833
+accept = 1648
+rejected = 185
+matrix size = 14
+fillins = 0
+solver = Normal
+Matrix Compiler1: 384 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: 776 bytes object code size  0.1/0.1/[0.0]
+

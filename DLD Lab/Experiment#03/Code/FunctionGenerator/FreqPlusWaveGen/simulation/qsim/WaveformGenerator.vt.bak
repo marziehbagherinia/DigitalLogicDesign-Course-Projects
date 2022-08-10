@@ -1,0 +1,101 @@
+`timescale 1 ps/ 1 ps
+
+module WaveformGenerator_vlg_vec_tst();
+reg clk;
+reg rst;
+reg [12:0] SW;
+// wires                                               
+wire [7:0] result;                            
+
+                          
+WaveformGenerator i1 (   
+	.clk(clk),
+	.result(result),
+	.rst(rst),
+	.SW(SW)
+);
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #2500 1'b1;
+	#2500;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b0;
+	rst = #8000 1'b1;
+	rst = #16000 1'b0;
+	#100000000;
+	$stop;
+end 
+// SW[ 12 ]
+initial
+begin
+	SW[12] = 1'b0;
+end 
+// SW[ 11 ]
+initial
+begin
+	SW[11] = 1'b0;
+end 
+// SW[ 10 ]
+initial
+begin
+	SW[10] = 1'b0;
+end 
+// SW[ 9 ]
+initial
+begin
+	SW[9] = 1'b1;
+end 
+// SW[ 8 ]
+initial
+begin
+	SW[8] = 1'b0;
+end 
+// SW[ 7 ]
+initial
+begin
+	SW[7] = 1'b0;
+end 
+// SW[ 6 ]
+initial
+begin
+	SW[6] = 1'b0;
+end 
+// SW[ 5 ]
+initial
+begin
+	SW[5] = 1'b0;
+end 
+// SW[ 4 ]
+initial
+begin
+	SW[4] = 1'b1;
+end 
+// SW[ 3 ]
+initial
+begin
+	SW[3] = 1'b1;
+end 
+// SW[ 2 ]
+initial
+begin
+	SW[2] = 1'b0;
+end 
+// SW[ 1 ]
+initial
+begin
+	SW[1] = 1'b0;
+end 
+// SW[ 0 ]
+initial
+begin
+	SW[0] = 1'b1;
+end 
+
+endmodule

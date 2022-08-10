@@ -1,0 +1,127 @@
+C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/square.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/square.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module square_wave
+
+Top level modules:
+	square_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sawTooth.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sawTooth.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sawTooth_wave
+
+Top level modules:
+	sawTooth_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/fullWave.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/fullWave.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module full_wave
+
+Top level modules:
+	full_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/triangle.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/triangle.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module triangle_wave
+
+Top level modules:
+	triangle_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/rhomboid.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/rhomboid.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rhomboid_wave
+
+Top level modules:
+	rhomboid_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/square.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/square.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module square_wave
+
+Top level modules:
+	square_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/sawTooth.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/sawTooth.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sawTooth_wave
+
+Top level modules:
+	sawTooth_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sine.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sine.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sine_wave
+
+Top level modules:
+	sine_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sineSquare.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sineSquare.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sineSquare_wave
+
+Top level modules:
+	sineSquare_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/waveformGenrator.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/waveformGenrator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module waveform_generator
+
+Top level modules:
+	waveform_generator
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/rhomboid.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/rhomboid.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rhomboid_wave
+
+Top level modules:
+	rhomboid_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/sine.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/sine.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sine_wave
+
+Top level modules:
+	sine_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/testBench.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/testBench.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module testBench
+
+Top level modules:
+	testBench
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/sineSquare.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/sineSquare.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sineSquare_wave
+
+Top level modules:
+	sineSquare_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/triangle.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/triangle.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module triangle_wave
+
+Top level modules:
+	triangle_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/waveformGenrator.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Modelsim/waveformGenrator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module waveform_generator
+
+Top level modules:
+	waveform_generator
+
+} {} {}} C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/fullWave.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/fullWave.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module full_wave
+
+Top level modules:
+	full_wave
+
+} {} {}} C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/testBench.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/testBench.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module testBench
+
+Top level modules:
+	testBench
+
+} {} {}}

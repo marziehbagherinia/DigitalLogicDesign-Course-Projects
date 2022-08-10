@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'FrequencyRegulator:inst4|clk_div'
+Slack : -7.834
+TNS   : -224.337
+
+Type  : Slow Model Setup 'clk'
+Slack : -2.228
+TNS   : -19.263
+
+Type  : Slow Model Hold 'clk'
+Slack : -2.421
+TNS   : -2.421
+
+Type  : Slow Model Hold 'FrequencyRegulator:inst4|clk_div'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'FrequencyRegulator:inst4|clk_div'
+Slack : -1.814
+TNS   : -165.432
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.631
+TNS   : -12.629
+
+Type  : Fast Model Setup 'FrequencyRegulator:inst4|clk_div'
+Slack : -2.008
+TNS   : -32.104
+
+Type  : Fast Model Setup 'clk'
+Slack : -0.190
+TNS   : -1.520
+
+Type  : Fast Model Hold 'clk'
+Slack : -1.278
+TNS   : -1.278
+
+Type  : Fast Model Hold 'FrequencyRegulator:inst4|clk_div'
+Slack : 0.203
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'FrequencyRegulator:inst4|clk_div'
+Slack : -1.423
+TNS   : -132.920
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -10.380
+
+------------------------------------------------------------

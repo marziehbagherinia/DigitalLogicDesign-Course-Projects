@@ -1,0 +1,119 @@
+`timescale 1 ps/ 1 ps
+
+module FreqRegulator_vlg_vec_tst();
+  
+reg clk2;
+reg Down;
+reg GN;
+reg Init;
+reg [7:0] setPeriod;
+                                              
+wire [7:0] adjustedDiv;
+wire [7:0] duration;
+wire equal;
+wire load;
+wire tffout;                            
+
+    reg  en;
+    wire clk;
+
+    parameter NO_STAGES = 3;
+    parameter INV_DELAY_ps = 8330;
+    
+    ringOscillator #(.NO_STAGES(NO_STAGES),
+                     .INV_DELAY_ps(INV_DELAY_ps)
+                     )DUT (.en(en),
+                           .clk(clk)
+                     );
+
+initial begin
+        en = 0;
+        #20000;
+        en = 1;
+        #1000000000;
+        $stop;
+end
+                         
+FreqRegulator i1 (  
+	.adjustedDiv(adjustedDiv),
+	.clk(clk),
+	.clk2(clk2),
+	.Down(Down),
+	.duration(duration),
+	.equal(equal),
+	.GN(GN),
+	.Init(Init),
+	.load(load),
+	.setPeriod(setPeriod),
+	.tffout(tffout)
+);
+
+// clk2
+always
+begin
+	clk2 = 1'b0;
+	clk2 = #10000 1'b1;
+	#10000;
+end 
+
+// Down
+initial
+begin
+	Down = 1'b1;
+end 
+
+// GN
+initial
+begin
+	GN = 1'b0;
+end 
+
+// Init
+initial
+begin
+	Init = 1'b1;
+	Init = #150000 1'b0;
+	Init = #320000 1'b1;
+end 
+// setPeriod[ 7 ]
+initial
+begin
+	setPeriod[7] = 1'b0;
+end 
+// setPeriod[ 6 ]
+initial
+begin
+	setPeriod[6] = 1'b1;
+end 
+// setPeriod[ 5 ]
+initial
+begin
+	setPeriod[5] = 1'b1;
+end 
+// setPeriod[ 4 ]
+initial
+begin
+	setPeriod[4] = 1'b1;
+end 
+// setPeriod[ 3 ]
+initial
+begin
+	setPeriod[3] = 1'b1;
+end 
+// setPeriod[ 2 ]
+initial
+begin
+	setPeriod[2] = 1'b1;
+end 
+// setPeriod[ 1 ]
+initial
+begin
+	setPeriod[1] = 1'b0;
+end 
+// setPeriod[ 0 ]
+initial
+begin
+	setPeriod[0] = 1'b1;
+end 
+
+endmodule

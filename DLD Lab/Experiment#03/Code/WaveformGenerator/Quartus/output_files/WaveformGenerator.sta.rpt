@@ -1,0 +1,1239 @@
+TimeQuest Timing Analyzer report for WaveformGenerator
+Mon Aug 24 13:55:47 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk'
+ 12. Slow Model Hold: 'clk'
+ 13. Slow Model Minimum Pulse Width: 'clk'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'clk'
+ 26. Fast Model Hold: 'clk'
+ 27. Fast Model Minimum Pulse Width: 'clk'
+ 28. Setup Times
+ 29. Hold Times
+ 30. Clock to Output Times
+ 31. Minimum Clock to Output Times
+ 32. Propagation Delay
+ 33. Minimum Propagation Delay
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Progagation Delay
+ 40. Minimum Progagation Delay
+ 41. Setup Transfers
+ 42. Hold Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; WaveformGenerator                                                 ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C5AF256A7                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 112.79 MHz ; 112.79 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -7.866 ; -225.070      ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.460 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.814 ; -167.063              ;
++-------+--------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                                                                  ;
++--------+-----------------------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; -7.866 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.889      ;
+; -7.846 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.867      ;
+; -7.837 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.860      ;
+; -7.756 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.777      ;
+; -7.567 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.590      ;
+; -7.547 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.568      ;
+; -7.542 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.563      ;
+; -7.538 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.561      ;
+; -7.493 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 8.519      ;
+; -7.493 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.516      ;
+; -7.484 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.507      ;
+; -7.473 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.494      ;
+; -7.464 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.485      ;
+; -7.464 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.487      ;
+; -7.457 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.478      ;
+; -7.456 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.479      ;
+; -7.455 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.478      ;
+; -7.436 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.457      ;
+; -7.435 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.458      ;
+; -7.427 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.450      ;
+; -7.415 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.436      ;
+; -7.406 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.429      ;
+; -7.383 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.404      ;
+; -7.374 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.395      ;
+; -7.346 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.367      ;
+; -7.333 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.356      ;
+; -7.325 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.346      ;
+; -7.313 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.334      ;
+; -7.304 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.327      ;
+; -7.248 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.271      ;
+; -7.243 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.264      ;
+; -7.240 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.263      ;
+; -7.228 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.249      ;
+; -7.223 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.244      ;
+; -7.220 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.241      ;
+; -7.219 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.242      ;
+; -7.211 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.234      ;
+; -7.194 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 8.220      ;
+; -7.169 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.190      ;
+; -7.160 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.181      ;
+; -7.138 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.159      ;
+; -7.132 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.153      ;
+; -7.130 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.151      ;
+; -7.125 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.148      ;
+; -7.120 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 8.146      ;
+; -7.111 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.132      ;
+; -7.111 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 8.137      ;
+; -7.105 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.126      ;
+; -7.096 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.119      ;
+; -7.090 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.113      ;
+; -7.085 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.108      ;
+; -7.083 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 8.109      ;
+; -7.070 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.091      ;
+; -7.065 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.086      ;
+; -7.063 ; waveform_generator:inst|full_wave:fw|pre_cosine[15] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.086      ;
+; -7.062 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 8.088      ;
+; -7.061 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.084      ;
+; -7.056 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.079      ;
+; -7.051 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.074      ;
+; -7.050 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[1] ; clk          ; clk         ; 1.000        ; -0.013     ; 8.076      ;
+; -7.043 ; waveform_generator:inst|full_wave:fw|pre_cosine[15] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.064      ;
+; -7.034 ; waveform_generator:inst|full_wave:fw|pre_cosine[15] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.057      ;
+; -7.031 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.052      ;
+; -7.022 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 8.045      ;
+; -7.015 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.036      ;
+; -7.009 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.030      ;
+; -6.980 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 8.001      ;
+; -6.975 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.996      ;
+; -6.960 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.986      ;
+; -6.953 ; waveform_generator:inst|full_wave:fw|pre_cosine[15] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.974      ;
+; -6.941 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.962      ;
+; -6.926 ; waveform_generator:inst|full_wave:fw|pre_sine[5]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 7.949      ;
+; -6.924 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.945      ;
+; -6.916 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.937      ;
+; -6.906 ; waveform_generator:inst|full_wave:fw|pre_sine[5]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.927      ;
+; -6.897 ; waveform_generator:inst|full_wave:fw|pre_sine[5]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 7.920      ;
+; -6.875 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.901      ;
+; -6.867 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.893      ;
+; -6.844 ; waveform_generator:inst|full_wave:fw|pre_sine[6]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 7.867      ;
+; -6.833 ; waveform_generator:inst|full_wave:fw|pre_cosine[14] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 7.856      ;
+; -6.824 ; waveform_generator:inst|full_wave:fw|pre_sine[6]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.845      ;
+; -6.816 ; waveform_generator:inst|full_wave:fw|pre_sine[5]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.837      ;
+; -6.815 ; waveform_generator:inst|full_wave:fw|pre_sine[6]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 7.838      ;
+; -6.813 ; waveform_generator:inst|full_wave:fw|pre_cosine[14] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.834      ;
+; -6.804 ; waveform_generator:inst|full_wave:fw|pre_cosine[14] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 7.827      ;
+; -6.801 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.822      ;
+; -6.766 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.787      ;
+; -6.761 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.782      ;
+; -6.752 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.778      ;
+; -6.751 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[1] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.777      ;
+; -6.734 ; waveform_generator:inst|full_wave:fw|pre_sine[6]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.755      ;
+; -6.727 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.748      ;
+; -6.723 ; waveform_generator:inst|full_wave:fw|pre_sine[7]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.016     ; 7.746      ;
+; -6.723 ; waveform_generator:inst|full_wave:fw|pre_cosine[14] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.744      ;
+; -6.717 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.743      ;
+; -6.712 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.738      ;
+; -6.704 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[0] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.730      ;
+; -6.703 ; waveform_generator:inst|full_wave:fw|pre_sine[7]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.018     ; 7.724      ;
+; -6.694 ; waveform_generator:inst|full_wave:fw|pre_sine[7]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.016     ; 7.717      ;
+; -6.678 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.013     ; 7.704      ;
++--------+-----------------------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                                                                                                                                                           ;
++-------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                             ; To Node                                                                                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.460 ; waveform_generator:inst|sineSquare_wave:sw4|toggle    ; waveform_generator:inst|sineSquare_wave:sw4|toggle                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.756      ;
+; 0.640 ; waveform_generator:inst|full_wave:fw|pre_sine[15]     ; waveform_generator:inst|full_wave:fw|pre_sine[15]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.936      ;
+; 0.653 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_cosine[15]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.949      ;
+; 0.674 ; counter_1:inst1|counter_out[9]                        ; counter_1:inst1|counter_out[9]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.970      ;
+; 0.707 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|counter[7]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.003      ;
+; 0.707 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[2]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.003      ;
+; 0.711 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[1]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.007      ;
+; 0.711 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[0]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.007      ;
+; 0.713 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[6]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.009      ;
+; 0.717 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[7]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.013      ;
+; 0.824 ; waveform_generator:inst|counter[6]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[6]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.120      ;
+; 0.840 ; counter_1:inst1|counter_out[2]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg2 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.182      ;
+; 0.845 ; waveform_generator:inst|counter[2]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[2]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.141      ;
+; 0.845 ; waveform_generator:inst|counter[0]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[0]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.141      ;
+; 0.988 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[7]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 1.283      ;
+; 0.989 ; waveform_generator:inst|full_wave:fw|pre_cosine[4]    ; waveform_generator:inst|full_wave:fw|pre_cosine[4]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.285      ;
+; 0.994 ; waveform_generator:inst|full_wave:fw|pre_sine[9]      ; waveform_generator:inst|full_wave:fw|pre_sine[9]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.290      ;
+; 0.995 ; waveform_generator:inst|full_wave:fw|pre_sine[11]     ; waveform_generator:inst|full_wave:fw|pre_sine[11]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.291      ;
+; 0.999 ; waveform_generator:inst|full_wave:fw|pre_sine[14]     ; waveform_generator:inst|full_wave:fw|pre_sine[14]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.295      ;
+; 0.999 ; waveform_generator:inst|full_wave:fw|pre_sine[2]      ; waveform_generator:inst|full_wave:fw|pre_sine[2]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.295      ;
+; 1.000 ; waveform_generator:inst|full_wave:fw|pre_sine[7]      ; waveform_generator:inst|full_wave:fw|pre_sine[7]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.296      ;
+; 1.003 ; waveform_generator:inst|full_wave:fw|pre_cosine[0]    ; waveform_generator:inst|full_wave:fw|pre_cosine[0]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.299      ;
+; 1.003 ; waveform_generator:inst|full_wave:fw|pre_cosine[1]    ; waveform_generator:inst|full_wave:fw|pre_cosine[1]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.299      ;
+; 1.007 ; waveform_generator:inst|full_wave:fw|pre_cosine[14]   ; waveform_generator:inst|full_wave:fw|pre_cosine[14]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.303      ;
+; 1.012 ; waveform_generator:inst|full_wave:fw|pre_cosine[13]   ; waveform_generator:inst|full_wave:fw|pre_cosine[13]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.308      ;
+; 1.012 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]    ; waveform_generator:inst|full_wave:fw|pre_cosine[9]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.308      ;
+; 1.012 ; waveform_generator:inst|full_wave:fw|pre_cosine[11]   ; waveform_generator:inst|full_wave:fw|pre_cosine[11]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.308      ;
+; 1.015 ; waveform_generator:inst|square_wave:sw2|square_out[0] ; waveform_generator:inst|wave_out[5]                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.311      ;
+; 1.024 ; counter_1:inst1|counter_out[7]                        ; counter_1:inst1|counter_out[7]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.320      ;
+; 1.029 ; counter_1:inst1|counter_out[0]                        ; counter_1:inst1|counter_out[0]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.325      ;
+; 1.029 ; counter_1:inst1|counter_out[5]                        ; counter_1:inst1|counter_out[5]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.325      ;
+; 1.030 ; counter_1:inst1|counter_out[2]                        ; counter_1:inst1|counter_out[2]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.326      ;
+; 1.040 ; waveform_generator:inst|counter[5]                    ; waveform_generator:inst|counter[5]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.336      ;
+; 1.043 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]    ; waveform_generator:inst|full_wave:fw|pre_cosine[8]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.339      ;
+; 1.043 ; waveform_generator:inst|counter[0]                    ; waveform_generator:inst|counter[0]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.339      ;
+; 1.043 ; waveform_generator:inst|counter[2]                    ; waveform_generator:inst|counter[2]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.339      ;
+; 1.044 ; waveform_generator:inst|full_wave:fw|pre_cosine[3]    ; waveform_generator:inst|full_wave:fw|pre_cosine[3]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.340      ;
+; 1.045 ; waveform_generator:inst|full_wave:fw|pre_sine[3]      ; waveform_generator:inst|full_wave:fw|pre_sine[3]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.341      ;
+; 1.045 ; waveform_generator:inst|full_wave:fw|pre_sine[5]      ; waveform_generator:inst|full_wave:fw|pre_sine[5]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.341      ;
+; 1.047 ; waveform_generator:inst|full_wave:fw|pre_sine[12]     ; waveform_generator:inst|full_wave:fw|pre_sine[12]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.343      ;
+; 1.047 ; waveform_generator:inst|full_wave:fw|pre_sine[10]     ; waveform_generator:inst|full_wave:fw|pre_sine[10]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.343      ;
+; 1.047 ; waveform_generator:inst|full_wave:fw|pre_cosine[5]    ; waveform_generator:inst|full_wave:fw|pre_cosine[5]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.343      ;
+; 1.048 ; waveform_generator:inst|full_wave:fw|pre_sine[8]      ; waveform_generator:inst|full_wave:fw|pre_sine[8]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.344      ;
+; 1.049 ; waveform_generator:inst|full_wave:fw|pre_sine[6]      ; waveform_generator:inst|full_wave:fw|pre_sine[6]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.345      ;
+; 1.057 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]    ; waveform_generator:inst|full_wave:fw|pre_cosine[6]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.353      ;
+; 1.060 ; counter_1:inst1|counter_out[6]                        ; counter_1:inst1|counter_out[6]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.356      ;
+; 1.063 ; waveform_generator:inst|counter[6]                    ; waveform_generator:inst|counter[6]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.359      ;
+; 1.069 ; counter_1:inst1|counter_out[1]                        ; counter_1:inst1|counter_out[1]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.365      ;
+; 1.073 ; waveform_generator:inst|counter[3]                    ; waveform_generator:inst|counter[3]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.369      ;
+; 1.076 ; waveform_generator:inst|counter[4]                    ; waveform_generator:inst|counter[4]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.372      ;
+; 1.078 ; counter_1:inst1|counter_out[4]                        ; counter_1:inst1|counter_out[4]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.374      ;
+; 1.078 ; waveform_generator:inst|counter[1]                    ; waveform_generator:inst|counter[1]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.374      ;
+; 1.079 ; counter_1:inst1|counter_out[3]                        ; counter_1:inst1|counter_out[3]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.375      ;
+; 1.087 ; waveform_generator:inst|counter[1]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[1]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.383      ;
+; 1.153 ; counter_1:inst1|counter_out[7]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg7 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.495      ;
+; 1.155 ; counter_1:inst1|counter_out[1]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg1 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.497      ;
+; 1.174 ; counter_1:inst1|counter_out[3]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg3 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.516      ;
+; 1.174 ; counter_1:inst1|counter_out[0]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg0 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.516      ;
+; 1.178 ; counter_1:inst1|counter_out[6]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg6 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.520      ;
+; 1.181 ; counter_1:inst1|counter_out[5]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg5 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.523      ;
+; 1.186 ; counter_1:inst1|counter_out[8]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg8 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.528      ;
+; 1.189 ; counter_1:inst1|counter_out[2]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg2 ; clk          ; clk         ; 0.000        ; 0.089      ; 1.536      ;
+; 1.194 ; counter_1:inst1|counter_out[9]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg9 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.536      ;
+; 1.199 ; counter_1:inst1|counter_out[0]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg0 ; clk          ; clk         ; 0.000        ; 0.089      ; 1.546      ;
+; 1.222 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]    ; waveform_generator:inst|full_wave:fw|pre_sine[1]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.518      ;
+; 1.229 ; counter_1:inst1|counter_out[4]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg4 ; clk          ; clk         ; 0.000        ; 0.084      ; 1.571      ;
+; 1.253 ; counter_1:inst1|counter_out[8]                        ; counter_1:inst1|counter_out[8]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.549      ;
+; 1.258 ; waveform_generator:inst|counter[2]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[2]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 1.553      ;
+; 1.265 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_sine[13]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.561      ;
+; 1.268 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_sine[15]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.564      ;
+; 1.271 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_sine[12]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.567      ;
+; 1.271 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_sine[10]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.567      ;
+; 1.277 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]    ; waveform_generator:inst|full_wave:fw|pre_sine[0]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.573      ;
+; 1.280 ; waveform_generator:inst|full_wave:fw|pre_cosine[10]   ; waveform_generator:inst|full_wave:fw|pre_cosine[10]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.576      ;
+; 1.281 ; waveform_generator:inst|full_wave:fw|pre_sine[4]      ; waveform_generator:inst|full_wave:fw|pre_sine[4]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.577      ;
+; 1.284 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]    ; waveform_generator:inst|full_wave:fw|pre_sine[3]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.580      ;
+; 1.284 ; waveform_generator:inst|full_wave:fw|pre_sine[1]      ; waveform_generator:inst|full_wave:fw|pre_sine[1]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.580      ;
+; 1.285 ; waveform_generator:inst|full_wave:fw|pre_sine[13]     ; waveform_generator:inst|full_wave:fw|pre_sine[13]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.581      ;
+; 1.286 ; waveform_generator:inst|full_wave:fw|pre_cosine[10]   ; waveform_generator:inst|full_wave:fw|pre_sine[4]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.582      ;
+; 1.287 ; waveform_generator:inst|full_wave:fw|pre_cosine[12]   ; waveform_generator:inst|full_wave:fw|pre_sine[6]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.583      ;
+; 1.297 ; waveform_generator:inst|full_wave:fw|pre_cosine[14]   ; waveform_generator:inst|full_wave:fw|pre_sine[8]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.593      ;
+; 1.307 ; waveform_generator:inst|full_wave:fw|pre_cosine[2]    ; waveform_generator:inst|full_wave:fw|pre_cosine[2]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.603      ;
+; 1.313 ; waveform_generator:inst|counter[6]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[6]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 1.608      ;
+; 1.315 ; waveform_generator:inst|counter[0]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[0]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 1.610      ;
+; 1.318 ; waveform_generator:inst|counter[1]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[1]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 1.613      ;
+; 1.328 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]    ; waveform_generator:inst|full_wave:fw|pre_sine[2]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.624      ;
+; 1.330 ; waveform_generator:inst|full_wave:fw|pre_cosine[13]   ; waveform_generator:inst|full_wave:fw|pre_sine[7]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.626      ;
+; 1.441 ; waveform_generator:inst|full_wave:fw|pre_cosine[4]    ; waveform_generator:inst|full_wave:fw|pre_cosine[5]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.737      ;
+; 1.446 ; waveform_generator:inst|full_wave:fw|pre_sine[14]     ; waveform_generator:inst|full_wave:fw|pre_sine[15]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.446 ; waveform_generator:inst|full_wave:fw|pre_sine[2]      ; waveform_generator:inst|full_wave:fw|pre_sine[3]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.446 ; waveform_generator:inst|full_wave:fw|pre_sine[9]      ; waveform_generator:inst|full_wave:fw|pre_sine[10]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.742      ;
+; 1.447 ; waveform_generator:inst|full_wave:fw|pre_sine[11]     ; waveform_generator:inst|full_wave:fw|pre_sine[12]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.743      ;
+; 1.450 ; waveform_generator:inst|full_wave:fw|pre_cosine[0]    ; waveform_generator:inst|full_wave:fw|pre_cosine[1]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.746      ;
+; 1.450 ; waveform_generator:inst|full_wave:fw|pre_cosine[1]    ; waveform_generator:inst|full_wave:fw|pre_cosine[2]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.746      ;
+; 1.459 ; waveform_generator:inst|full_wave:fw|pre_cosine[11]   ; waveform_generator:inst|full_wave:fw|pre_cosine[12]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.755      ;
+; 1.459 ; waveform_generator:inst|full_wave:fw|pre_cosine[14]   ; waveform_generator:inst|full_wave:fw|pre_cosine[15]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.755      ;
+; 1.459 ; waveform_generator:inst|full_wave:fw|pre_cosine[13]   ; waveform_generator:inst|full_wave:fw|pre_cosine[14]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.755      ;
+; 1.459 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]    ; waveform_generator:inst|full_wave:fw|pre_cosine[10]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.755      ;
+; 1.471 ; counter_1:inst1|counter_out[7]                        ; counter_1:inst1|counter_out[8]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.767      ;
+; 1.476 ; counter_1:inst1|counter_out[0]                        ; counter_1:inst1|counter_out[1]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.772      ;
++-------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                                                                                                       ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg5 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg5 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg6 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg6 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg7 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg7 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg8 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg8 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg9 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg9 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg0 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg0 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg1 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg1 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg2 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg2 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg3 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg3 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg4 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg4 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg5 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg5 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg6 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg6 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg7 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg7 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg8 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg8 ;
+; -1.814 ; 0.500        ; 2.314          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg9 ;
+; -1.814 ; 0.500        ; 2.314          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg9 ;
+; -1.631 ; 1.000        ; 2.631          ; Port Rate        ; clk   ; Rise       ; clk                                                                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[0]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[0]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[1]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[1]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[2]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[2]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[3]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[3]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[4]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[4]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[5]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[5]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[6]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[6]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[7]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[7]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[8]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[8]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[9]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[9]                                                                             ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[0]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[0]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[1]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[1]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[2]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[2]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[3]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[3]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[4]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[4]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[5]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[5]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[6]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[6]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[7]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[7]                                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[0]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[0]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[10]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[10]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[11]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[11]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[12]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[12]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[13]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[13]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[14]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[14]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[15]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[15]                                                        ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[1]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[1]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[2]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[2]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[3]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[3]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[4]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[4]                                                         ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[5]                                                         ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; func[*]   ; clk        ; 7.910 ; 7.910 ; Rise       ; clk             ;
+;  func[0]  ; clk        ; 7.662 ; 7.662 ; Rise       ; clk             ;
+;  func[1]  ; clk        ; 7.910 ; 7.910 ; Rise       ; clk             ;
+;  func[2]  ; clk        ; 7.772 ; 7.772 ; Rise       ; clk             ;
+; rst       ; clk        ; 1.485 ; 1.485 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; func[*]   ; clk        ; -4.999 ; -4.999 ; Rise       ; clk             ;
+;  func[0]  ; clk        ; -4.999 ; -4.999 ; Rise       ; clk             ;
+;  func[1]  ; clk        ; -5.057 ; -5.057 ; Rise       ; clk             ;
+;  func[2]  ; clk        ; -5.038 ; -5.038 ; Rise       ; clk             ;
+; rst       ; clk        ; 0.115  ; 0.115  ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; result[*]  ; clk        ; 12.591 ; 12.591 ; Rise       ; clk             ;
+;  result[0] ; clk        ; 12.089 ; 12.089 ; Rise       ; clk             ;
+;  result[1] ; clk        ; 12.591 ; 12.591 ; Rise       ; clk             ;
+;  result[2] ; clk        ; 12.454 ; 12.454 ; Rise       ; clk             ;
+;  result[3] ; clk        ; 11.630 ; 11.630 ; Rise       ; clk             ;
+;  result[4] ; clk        ; 11.285 ; 11.285 ; Rise       ; clk             ;
+;  result[5] ; clk        ; 11.297 ; 11.297 ; Rise       ; clk             ;
+;  result[6] ; clk        ; 11.407 ; 11.407 ; Rise       ; clk             ;
+;  result[7] ; clk        ; 11.019 ; 11.019 ; Rise       ; clk             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; result[*]  ; clk        ; 7.369 ; 7.369 ; Rise       ; clk             ;
+;  result[0] ; clk        ; 7.369 ; 7.369 ; Rise       ; clk             ;
+;  result[1] ; clk        ; 7.682 ; 7.682 ; Rise       ; clk             ;
+;  result[2] ; clk        ; 7.375 ; 7.375 ; Rise       ; clk             ;
+;  result[3] ; clk        ; 7.909 ; 7.909 ; Rise       ; clk             ;
+;  result[4] ; clk        ; 7.866 ; 7.866 ; Rise       ; clk             ;
+;  result[5] ; clk        ; 7.703 ; 7.703 ; Rise       ; clk             ;
+;  result[6] ; clk        ; 8.590 ; 8.590 ; Rise       ; clk             ;
+;  result[7] ; clk        ; 7.497 ; 7.497 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; select     ; result[0]   ; 11.230 ; 11.230 ; 11.230 ; 11.230 ;
+; select     ; result[1]   ; 11.550 ; 11.550 ; 11.550 ; 11.550 ;
+; select     ; result[2]   ; 11.235 ; 11.235 ; 11.235 ; 11.235 ;
+; select     ; result[3]   ; 10.767 ; 10.767 ; 10.767 ; 10.767 ;
+; select     ; result[4]   ; 10.775 ; 10.775 ; 10.775 ; 10.775 ;
+; select     ; result[5]   ; 10.770 ; 10.770 ; 10.770 ; 10.770 ;
+; select     ; result[6]   ; 11.242 ; 11.242 ; 11.242 ; 11.242 ;
+; select     ; result[7]   ; 11.079 ; 11.079 ; 11.079 ; 11.079 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; select     ; result[0]   ; 11.230 ; 11.230 ; 11.230 ; 11.230 ;
+; select     ; result[1]   ; 11.550 ; 11.550 ; 11.550 ; 11.550 ;
+; select     ; result[2]   ; 11.235 ; 11.235 ; 11.235 ; 11.235 ;
+; select     ; result[3]   ; 10.767 ; 10.767 ; 10.767 ; 10.767 ;
+; select     ; result[4]   ; 10.775 ; 10.775 ; 10.775 ; 10.775 ;
+; select     ; result[5]   ; 10.770 ; 10.770 ; 10.770 ; 10.770 ;
+; select     ; result[6]   ; 11.242 ; 11.242 ; 11.242 ; 11.242 ;
+; select     ; result[7]   ; 11.079 ; 11.079 ; 11.079 ; 11.079 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -2.011 ; -32.143       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.203 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.423 ; -134.300              ;
++-------+--------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                                                                                  ;
++--------+-----------------------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                           ; To Node                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.011 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 3.030      ;
+; -1.990 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 3.009      ;
+; -1.981 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.998      ;
+; -1.951 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.968      ;
+; -1.920 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.939      ;
+; -1.899 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.918      ;
+; -1.890 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.907      ;
+; -1.884 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.901      ;
+; -1.882 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.901      ;
+; -1.881 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.900      ;
+; -1.872 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.891      ;
+; -1.871 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.890      ;
+; -1.861 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.883      ;
+; -1.861 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.880      ;
+; -1.860 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.879      ;
+; -1.860 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.877      ;
+; -1.852 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.869      ;
+; -1.851 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.870      ;
+; -1.851 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.868      ;
+; -1.850 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.869      ;
+; -1.842 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.859      ;
+; -1.841 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.858      ;
+; -1.825 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.844      ;
+; -1.822 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.839      ;
+; -1.821 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.838      ;
+; -1.812 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.829      ;
+; -1.811 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.828      ;
+; -1.804 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.823      ;
+; -1.795 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.812      ;
+; -1.793 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.810      ;
+; -1.789 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.808      ;
+; -1.776 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.795      ;
+; -1.770 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.792      ;
+; -1.768 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.787      ;
+; -1.765 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.782      ;
+; -1.759 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.776      ;
+; -1.755 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.774      ;
+; -1.755 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.772      ;
+; -1.754 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.773      ;
+; -1.754 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.771      ;
+; -1.746 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.763      ;
+; -1.745 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.762      ;
+; -1.744 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.761      ;
+; -1.734 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.753      ;
+; -1.733 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.752      ;
+; -1.732 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.754      ;
+; -1.731 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[1] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.753      ;
+; -1.731 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.753      ;
+; -1.729 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.746      ;
+; -1.724 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.741      ;
+; -1.722 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.744      ;
+; -1.721 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.740      ;
+; -1.721 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.743      ;
+; -1.716 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.733      ;
+; -1.713 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.732      ;
+; -1.704 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.721      ;
+; -1.700 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.719      ;
+; -1.698 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.715      ;
+; -1.694 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.711      ;
+; -1.693 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.712      ;
+; -1.691 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.708      ;
+; -1.686 ; waveform_generator:inst|full_wave:fw|pre_cosine[15] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.705      ;
+; -1.680 ; waveform_generator:inst|full_wave:fw|pre_sine[0]    ; waveform_generator:inst|wave_out[0] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.702      ;
+; -1.675 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]  ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.697      ;
+; -1.674 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.691      ;
+; -1.672 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.691      ;
+; -1.667 ; waveform_generator:inst|full_wave:fw|pre_sine[5]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.686      ;
+; -1.665 ; waveform_generator:inst|full_wave:fw|pre_cosine[15] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.684      ;
+; -1.663 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.680      ;
+; -1.662 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.679      ;
+; -1.661 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.678      ;
+; -1.656 ; waveform_generator:inst|full_wave:fw|pre_cosine[15] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.673      ;
+; -1.649 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.666      ;
+; -1.646 ; waveform_generator:inst|full_wave:fw|pre_sine[5]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.665      ;
+; -1.640 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[1] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.662      ;
+; -1.639 ; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.661      ;
+; -1.637 ; waveform_generator:inst|full_wave:fw|pre_sine[5]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.654      ;
+; -1.633 ; waveform_generator:inst|full_wave:fw|pre_sine[6]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.652      ;
+; -1.633 ; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.650      ;
+; -1.627 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.644      ;
+; -1.626 ; waveform_generator:inst|full_wave:fw|pre_cosine[15] ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.643      ;
+; -1.626 ; waveform_generator:inst|full_wave:fw|pre_sine[4]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.648      ;
+; -1.612 ; waveform_generator:inst|full_wave:fw|pre_sine[6]    ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.631      ;
+; -1.607 ; waveform_generator:inst|full_wave:fw|pre_sine[5]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.624      ;
+; -1.607 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.624      ;
+; -1.604 ; waveform_generator:inst|full_wave:fw|pre_sine[2]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.626      ;
+; -1.603 ; waveform_generator:inst|full_wave:fw|pre_sine[6]    ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.620      ;
+; -1.602 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]  ; waveform_generator:inst|wave_out[1] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.624      ;
+; -1.601 ; waveform_generator:inst|full_wave:fw|pre_cosine[14] ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.620      ;
+; -1.601 ; waveform_generator:inst|full_wave:fw|pre_sine[1]    ; waveform_generator:inst|wave_out[1] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.623      ;
+; -1.594 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[3] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.611      ;
+; -1.592 ; waveform_generator:inst|full_wave:fw|pre_cosine[11] ; waveform_generator:inst|wave_out[1] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.614      ;
+; -1.591 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; waveform_generator:inst|wave_out[1] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.613      ;
+; -1.589 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]  ; waveform_generator:inst|wave_out[0] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.611      ;
+; -1.584 ; waveform_generator:inst|full_wave:fw|pre_sine[3]    ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.606      ;
+; -1.580 ; waveform_generator:inst|full_wave:fw|pre_sine[7]    ; waveform_generator:inst|wave_out[7] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.599      ;
+; -1.580 ; waveform_generator:inst|full_wave:fw|pre_cosine[14] ; waveform_generator:inst|wave_out[6] ; clk          ; clk         ; 1.000        ; -0.011     ; 2.599      ;
+; -1.573 ; waveform_generator:inst|full_wave:fw|pre_sine[6]    ; waveform_generator:inst|wave_out[4] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.590      ;
+; -1.571 ; waveform_generator:inst|full_wave:fw|pre_cosine[14] ; waveform_generator:inst|wave_out[5] ; clk          ; clk         ; 1.000        ; -0.013     ; 2.588      ;
+; -1.571 ; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; waveform_generator:inst|wave_out[2] ; clk          ; clk         ; 1.000        ; -0.008     ; 2.593      ;
++--------+-----------------------------------------------------+-------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                                                                                                                           ;
++-------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                             ; To Node                                                                                                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.203 ; waveform_generator:inst|sineSquare_wave:sw4|toggle    ; waveform_generator:inst|sineSquare_wave:sw4|toggle                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.351      ;
+; 0.225 ; waveform_generator:inst|full_wave:fw|pre_sine[15]     ; waveform_generator:inst|full_wave:fw|pre_sine[15]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.373      ;
+; 0.230 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_cosine[15]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.378      ;
+; 0.238 ; counter_1:inst1|counter_out[9]                        ; counter_1:inst1|counter_out[9]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.386      ;
+; 0.253 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|counter[7]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.401      ;
+; 0.254 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[2]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.402      ;
+; 0.258 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[1]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.406      ;
+; 0.259 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[6]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.407      ;
+; 0.259 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[0]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.407      ;
+; 0.262 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[7]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.410      ;
+; 0.271 ; counter_1:inst1|counter_out[2]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg2 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.465      ;
+; 0.285 ; waveform_generator:inst|counter[6]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[6]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.433      ;
+; 0.294 ; waveform_generator:inst|counter[2]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[2]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.442      ;
+; 0.296 ; waveform_generator:inst|counter[0]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[0]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.444      ;
+; 0.334 ; waveform_generator:inst|full_wave:fw|pre_cosine[4]    ; waveform_generator:inst|full_wave:fw|pre_cosine[4]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.482      ;
+; 0.336 ; waveform_generator:inst|full_wave:fw|pre_sine[2]      ; waveform_generator:inst|full_wave:fw|pre_sine[2]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.484      ;
+; 0.337 ; waveform_generator:inst|full_wave:fw|pre_sine[14]     ; waveform_generator:inst|full_wave:fw|pre_sine[14]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.485      ;
+; 0.337 ; waveform_generator:inst|full_wave:fw|pre_sine[7]      ; waveform_generator:inst|full_wave:fw|pre_sine[7]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.485      ;
+; 0.337 ; waveform_generator:inst|full_wave:fw|pre_sine[9]      ; waveform_generator:inst|full_wave:fw|pre_sine[9]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.485      ;
+; 0.337 ; waveform_generator:inst|full_wave:fw|pre_sine[11]     ; waveform_generator:inst|full_wave:fw|pre_sine[11]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.485      ;
+; 0.338 ; waveform_generator:inst|full_wave:fw|pre_cosine[1]    ; waveform_generator:inst|full_wave:fw|pre_cosine[1]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.486      ;
+; 0.341 ; waveform_generator:inst|full_wave:fw|pre_cosine[13]   ; waveform_generator:inst|full_wave:fw|pre_cosine[13]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.489      ;
+; 0.341 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]    ; waveform_generator:inst|full_wave:fw|pre_cosine[9]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.489      ;
+; 0.341 ; waveform_generator:inst|full_wave:fw|pre_cosine[11]   ; waveform_generator:inst|full_wave:fw|pre_cosine[11]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.489      ;
+; 0.341 ; waveform_generator:inst|full_wave:fw|pre_cosine[0]    ; waveform_generator:inst|full_wave:fw|pre_cosine[0]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.489      ;
+; 0.342 ; waveform_generator:inst|full_wave:fw|pre_cosine[14]   ; waveform_generator:inst|full_wave:fw|pre_cosine[14]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.490      ;
+; 0.344 ; waveform_generator:inst|square_wave:sw2|square_out[0] ; waveform_generator:inst|wave_out[5]                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.492      ;
+; 0.346 ; counter_1:inst1|counter_out[7]                        ; counter_1:inst1|counter_out[7]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.494      ;
+; 0.347 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]    ; waveform_generator:inst|full_wave:fw|pre_cosine[8]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.495      ;
+; 0.349 ; waveform_generator:inst|full_wave:fw|pre_sine[8]      ; waveform_generator:inst|full_wave:fw|pre_sine[8]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.497      ;
+; 0.349 ; waveform_generator:inst|full_wave:fw|pre_sine[10]     ; waveform_generator:inst|full_wave:fw|pre_sine[10]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.497      ;
+; 0.349 ; waveform_generator:inst|full_wave:fw|pre_sine[3]      ; waveform_generator:inst|full_wave:fw|pre_sine[3]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.497      ;
+; 0.349 ; waveform_generator:inst|full_wave:fw|pre_cosine[3]    ; waveform_generator:inst|full_wave:fw|pre_cosine[3]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.497      ;
+; 0.350 ; counter_1:inst1|counter_out[0]                        ; counter_1:inst1|counter_out[0]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.498      ;
+; 0.350 ; counter_1:inst1|counter_out[2]                        ; counter_1:inst1|counter_out[2]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.498      ;
+; 0.350 ; counter_1:inst1|counter_out[5]                        ; counter_1:inst1|counter_out[5]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.498      ;
+; 0.350 ; waveform_generator:inst|full_wave:fw|pre_sine[12]     ; waveform_generator:inst|full_wave:fw|pre_sine[12]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.498      ;
+; 0.350 ; waveform_generator:inst|full_wave:fw|pre_sine[6]      ; waveform_generator:inst|full_wave:fw|pre_sine[6]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.498      ;
+; 0.350 ; waveform_generator:inst|full_wave:fw|pre_sine[5]      ; waveform_generator:inst|full_wave:fw|pre_sine[5]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.498      ;
+; 0.350 ; waveform_generator:inst|full_wave:fw|pre_cosine[5]    ; waveform_generator:inst|full_wave:fw|pre_cosine[5]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.498      ;
+; 0.352 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]    ; waveform_generator:inst|full_wave:fw|pre_cosine[6]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.500      ;
+; 0.354 ; waveform_generator:inst|counter[5]                    ; waveform_generator:inst|counter[5]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.502      ;
+; 0.355 ; counter_1:inst1|counter_out[6]                        ; counter_1:inst1|counter_out[6]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.503      ;
+; 0.355 ; waveform_generator:inst|counter[0]                    ; waveform_generator:inst|counter[0]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.503      ;
+; 0.356 ; waveform_generator:inst|counter[2]                    ; waveform_generator:inst|counter[2]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.504      ;
+; 0.357 ; waveform_generator:inst|counter[7]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[7]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 0.504      ;
+; 0.358 ; waveform_generator:inst|counter[6]                    ; waveform_generator:inst|counter[6]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.506      ;
+; 0.360 ; counter_1:inst1|counter_out[1]                        ; counter_1:inst1|counter_out[1]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.508      ;
+; 0.362 ; waveform_generator:inst|counter[3]                    ; waveform_generator:inst|counter[3]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.362 ; waveform_generator:inst|counter[4]                    ; waveform_generator:inst|counter[4]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.363 ; counter_1:inst1|counter_out[3]                        ; counter_1:inst1|counter_out[3]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.363 ; counter_1:inst1|counter_out[4]                        ; counter_1:inst1|counter_out[4]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.363 ; waveform_generator:inst|counter[1]                    ; waveform_generator:inst|counter[1]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.368 ; waveform_generator:inst|counter[1]                    ; waveform_generator:inst|triangle_wave:tw|triangle_out[1]                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.516      ;
+; 0.384 ; counter_1:inst1|counter_out[7]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg7 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.578      ;
+; 0.385 ; counter_1:inst1|counter_out[1]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg1 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.579      ;
+; 0.388 ; counter_1:inst1|counter_out[2]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg2 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.586      ;
+; 0.392 ; counter_1:inst1|counter_out[0]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg0 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.590      ;
+; 0.393 ; counter_1:inst1|counter_out[0]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg0 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.587      ;
+; 0.395 ; counter_1:inst1|counter_out[6]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg6 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.589      ;
+; 0.395 ; counter_1:inst1|counter_out[3]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg3 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.589      ;
+; 0.400 ; counter_1:inst1|counter_out[8]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg8 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.594      ;
+; 0.400 ; counter_1:inst1|counter_out[5]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg5 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.594      ;
+; 0.402 ; counter_1:inst1|counter_out[9]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg9 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.596      ;
+; 0.420 ; counter_1:inst1|counter_out[8]                        ; counter_1:inst1|counter_out[8]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.568      ;
+; 0.421 ; counter_1:inst1|counter_out[4]                        ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg4 ; clk          ; clk         ; 0.000        ; 0.059      ; 0.615      ;
+; 0.424 ; waveform_generator:inst|counter[2]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[2]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 0.571      ;
+; 0.425 ; waveform_generator:inst|full_wave:fw|pre_sine[4]      ; waveform_generator:inst|full_wave:fw|pre_sine[4]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.573      ;
+; 0.428 ; waveform_generator:inst|full_wave:fw|pre_sine[1]      ; waveform_generator:inst|full_wave:fw|pre_sine[1]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.576      ;
+; 0.430 ; waveform_generator:inst|full_wave:fw|pre_cosine[7]    ; waveform_generator:inst|full_wave:fw|pre_sine[1]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.578      ;
+; 0.431 ; waveform_generator:inst|full_wave:fw|pre_sine[13]     ; waveform_generator:inst|full_wave:fw|pre_sine[13]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.579      ;
+; 0.437 ; waveform_generator:inst|full_wave:fw|pre_cosine[6]    ; waveform_generator:inst|full_wave:fw|pre_sine[0]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.585      ;
+; 0.438 ; waveform_generator:inst|full_wave:fw|pre_cosine[10]   ; waveform_generator:inst|full_wave:fw|pre_cosine[10]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.586      ;
+; 0.439 ; waveform_generator:inst|full_wave:fw|pre_cosine[2]    ; waveform_generator:inst|full_wave:fw|pre_cosine[2]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.587      ;
+; 0.439 ; waveform_generator:inst|full_wave:fw|pre_cosine[12]   ; waveform_generator:inst|full_wave:fw|pre_sine[6]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.587      ;
+; 0.439 ; waveform_generator:inst|full_wave:fw|pre_cosine[10]   ; waveform_generator:inst|full_wave:fw|pre_sine[4]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.587      ;
+; 0.440 ; waveform_generator:inst|counter[0]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[0]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 0.587      ;
+; 0.441 ; waveform_generator:inst|counter[1]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[1]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 0.588      ;
+; 0.441 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]    ; waveform_generator:inst|full_wave:fw|pre_sine[3]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.589      ;
+; 0.444 ; waveform_generator:inst|full_wave:fw|pre_cosine[14]   ; waveform_generator:inst|full_wave:fw|pre_sine[8]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.592      ;
+; 0.445 ; waveform_generator:inst|counter[6]                    ; waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[6]                                                   ; clk          ; clk         ; 0.000        ; -0.001     ; 0.592      ;
+; 0.449 ; waveform_generator:inst|full_wave:fw|pre_cosine[13]   ; waveform_generator:inst|full_wave:fw|pre_sine[7]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.597      ;
+; 0.450 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_sine[15]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.598      ;
+; 0.451 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_sine[13]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.599      ;
+; 0.452 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]    ; waveform_generator:inst|full_wave:fw|pre_sine[2]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.600      ;
+; 0.452 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_sine[10]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.600      ;
+; 0.452 ; waveform_generator:inst|full_wave:fw|pre_cosine[15]   ; waveform_generator:inst|full_wave:fw|pre_sine[12]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.600      ;
+; 0.466 ; waveform_generator:inst|full_wave:fw|pre_cosine[4]    ; waveform_generator:inst|full_wave:fw|pre_cosine[5]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.614      ;
+; 0.468 ; waveform_generator:inst|full_wave:fw|pre_sine[2]      ; waveform_generator:inst|full_wave:fw|pre_sine[3]                                                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.616      ;
+; 0.469 ; waveform_generator:inst|full_wave:fw|pre_sine[14]     ; waveform_generator:inst|full_wave:fw|pre_sine[15]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.617      ;
+; 0.469 ; waveform_generator:inst|full_wave:fw|pre_sine[9]      ; waveform_generator:inst|full_wave:fw|pre_sine[10]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.617      ;
+; 0.469 ; waveform_generator:inst|full_wave:fw|pre_sine[11]     ; waveform_generator:inst|full_wave:fw|pre_sine[12]                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.617      ;
+; 0.470 ; waveform_generator:inst|full_wave:fw|pre_cosine[0]    ; waveform_generator:inst|full_wave:fw|pre_cosine[1]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.618      ;
+; 0.470 ; waveform_generator:inst|full_wave:fw|pre_cosine[1]    ; waveform_generator:inst|full_wave:fw|pre_cosine[2]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.618      ;
+; 0.473 ; waveform_generator:inst|full_wave:fw|pre_cosine[11]   ; waveform_generator:inst|full_wave:fw|pre_cosine[12]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.621      ;
+; 0.473 ; waveform_generator:inst|full_wave:fw|pre_cosine[13]   ; waveform_generator:inst|full_wave:fw|pre_cosine[14]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.621      ;
+; 0.473 ; waveform_generator:inst|full_wave:fw|pre_cosine[9]    ; waveform_generator:inst|full_wave:fw|pre_cosine[10]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.621      ;
+; 0.474 ; waveform_generator:inst|full_wave:fw|pre_cosine[14]   ; waveform_generator:inst|full_wave:fw|pre_cosine[15]                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.622      ;
+; 0.478 ; counter_1:inst1|counter_out[7]                        ; counter_1:inst1|counter_out[8]                                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.626      ;
+; 0.480 ; waveform_generator:inst|full_wave:fw|pre_cosine[8]    ; waveform_generator:inst|full_wave:fw|pre_cosine[9]                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.628      ;
++-------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                                                                                                       ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg1 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg2 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg3 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg4 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg5 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg5 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg6 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg6 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg7 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg7 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg8 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg8 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg9 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a0~porta_address_reg9 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg0 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg0 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg1 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg1 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg2 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg2 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg3 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg3 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg4 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg4 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg5 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg5 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg6 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg6 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg7 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg7 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg8 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg8 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg9 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; clk   ; Rise       ; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ram_block1a4~porta_address_reg9 ;
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                                                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[0]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[0]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[1]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[1]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[2]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[2]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[3]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[3]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[4]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[4]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[5]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[5]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[6]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[6]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[7]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[7]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[8]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[8]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; counter_1:inst1|counter_out[9]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; counter_1:inst1|counter_out[9]                                                                             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[0]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[0]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[1]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[1]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[2]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[2]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[3]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[3]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[4]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[4]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[5]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[5]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[6]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[6]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|counter[7]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|counter[7]                                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[0]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[0]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[10]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[10]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[11]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[11]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[12]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[12]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[13]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[13]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[14]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[14]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[15]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[15]                                                        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[1]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[1]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[2]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[2]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[3]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[3]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[4]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[4]                                                         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; waveform_generator:inst|full_wave:fw|pre_cosine[5]                                                         ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; func[*]   ; clk        ; 3.176 ; 3.176 ; Rise       ; clk             ;
+;  func[0]  ; clk        ; 3.114 ; 3.114 ; Rise       ; clk             ;
+;  func[1]  ; clk        ; 3.176 ; 3.176 ; Rise       ; clk             ;
+;  func[2]  ; clk        ; 3.145 ; 3.145 ; Rise       ; clk             ;
+; rst       ; clk        ; 0.289 ; 0.289 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; func[*]   ; clk        ; -2.167 ; -2.167 ; Rise       ; clk             ;
+;  func[0]  ; clk        ; -2.167 ; -2.167 ; Rise       ; clk             ;
+;  func[1]  ; clk        ; -2.197 ; -2.197 ; Rise       ; clk             ;
+;  func[2]  ; clk        ; -2.191 ; -2.191 ; Rise       ; clk             ;
+; rst       ; clk        ; 0.349  ; 0.349  ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; result[*]  ; clk        ; 5.939 ; 5.939 ; Rise       ; clk             ;
+;  result[0] ; clk        ; 5.717 ; 5.717 ; Rise       ; clk             ;
+;  result[1] ; clk        ; 5.939 ; 5.939 ; Rise       ; clk             ;
+;  result[2] ; clk        ; 5.851 ; 5.851 ; Rise       ; clk             ;
+;  result[3] ; clk        ; 5.545 ; 5.545 ; Rise       ; clk             ;
+;  result[4] ; clk        ; 5.432 ; 5.432 ; Rise       ; clk             ;
+;  result[5] ; clk        ; 5.433 ; 5.433 ; Rise       ; clk             ;
+;  result[6] ; clk        ; 5.500 ; 5.500 ; Rise       ; clk             ;
+;  result[7] ; clk        ; 5.352 ; 5.352 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; result[*]  ; clk        ; 3.465 ; 3.465 ; Rise       ; clk             ;
+;  result[0] ; clk        ; 3.465 ; 3.465 ; Rise       ; clk             ;
+;  result[1] ; clk        ; 3.578 ; 3.578 ; Rise       ; clk             ;
+;  result[2] ; clk        ; 3.468 ; 3.468 ; Rise       ; clk             ;
+;  result[3] ; clk        ; 3.622 ; 3.622 ; Rise       ; clk             ;
+;  result[4] ; clk        ; 3.625 ; 3.625 ; Rise       ; clk             ;
+;  result[5] ; clk        ; 3.551 ; 3.551 ; Rise       ; clk             ;
+;  result[6] ; clk        ; 3.877 ; 3.877 ; Rise       ; clk             ;
+;  result[7] ; clk        ; 3.501 ; 3.501 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; select     ; result[0]   ; 5.268 ; 5.268 ; 5.268 ; 5.268 ;
+; select     ; result[1]   ; 5.384 ; 5.384 ; 5.384 ; 5.384 ;
+; select     ; result[2]   ; 5.270 ; 5.270 ; 5.270 ; 5.270 ;
+; select     ; result[3]   ; 5.082 ; 5.082 ; 5.082 ; 5.082 ;
+; select     ; result[4]   ; 5.091 ; 5.091 ; 5.091 ; 5.091 ;
+; select     ; result[5]   ; 5.083 ; 5.083 ; 5.083 ; 5.083 ;
+; select     ; result[6]   ; 5.276 ; 5.276 ; 5.276 ; 5.276 ;
+; select     ; result[7]   ; 5.201 ; 5.201 ; 5.201 ; 5.201 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; select     ; result[0]   ; 5.268 ; 5.268 ; 5.268 ; 5.268 ;
+; select     ; result[1]   ; 5.384 ; 5.384 ; 5.384 ; 5.384 ;
+; select     ; result[2]   ; 5.270 ; 5.270 ; 5.270 ; 5.270 ;
+; select     ; result[3]   ; 5.082 ; 5.082 ; 5.082 ; 5.082 ;
+; select     ; result[4]   ; 5.091 ; 5.091 ; 5.091 ; 5.091 ;
+; select     ; result[5]   ; 5.083 ; 5.083 ; 5.083 ; 5.083 ;
+; select     ; result[6]   ; 5.276 ; 5.276 ; 5.276 ; 5.276 ;
+; select     ; result[7]   ; 5.201 ; 5.201 ; 5.201 ; 5.201 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -7.866   ; 0.203 ; N/A      ; N/A     ; -1.814              ;
+;  clk             ; -7.866   ; 0.203 ; N/A      ; N/A     ; -1.814              ;
+; Design-wide TNS  ; -225.07  ; 0.0   ; 0.0      ; 0.0     ; -167.063            ;
+;  clk             ; -225.070 ; 0.000 ; N/A      ; N/A     ; -167.063            ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; func[*]   ; clk        ; 7.910 ; 7.910 ; Rise       ; clk             ;
+;  func[0]  ; clk        ; 7.662 ; 7.662 ; Rise       ; clk             ;
+;  func[1]  ; clk        ; 7.910 ; 7.910 ; Rise       ; clk             ;
+;  func[2]  ; clk        ; 7.772 ; 7.772 ; Rise       ; clk             ;
+; rst       ; clk        ; 1.485 ; 1.485 ; Rise       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; func[*]   ; clk        ; -2.167 ; -2.167 ; Rise       ; clk             ;
+;  func[0]  ; clk        ; -2.167 ; -2.167 ; Rise       ; clk             ;
+;  func[1]  ; clk        ; -2.197 ; -2.197 ; Rise       ; clk             ;
+;  func[2]  ; clk        ; -2.191 ; -2.191 ; Rise       ; clk             ;
+; rst       ; clk        ; 0.349  ; 0.349  ; Rise       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; result[*]  ; clk        ; 12.591 ; 12.591 ; Rise       ; clk             ;
+;  result[0] ; clk        ; 12.089 ; 12.089 ; Rise       ; clk             ;
+;  result[1] ; clk        ; 12.591 ; 12.591 ; Rise       ; clk             ;
+;  result[2] ; clk        ; 12.454 ; 12.454 ; Rise       ; clk             ;
+;  result[3] ; clk        ; 11.630 ; 11.630 ; Rise       ; clk             ;
+;  result[4] ; clk        ; 11.285 ; 11.285 ; Rise       ; clk             ;
+;  result[5] ; clk        ; 11.297 ; 11.297 ; Rise       ; clk             ;
+;  result[6] ; clk        ; 11.407 ; 11.407 ; Rise       ; clk             ;
+;  result[7] ; clk        ; 11.019 ; 11.019 ; Rise       ; clk             ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; result[*]  ; clk        ; 3.465 ; 3.465 ; Rise       ; clk             ;
+;  result[0] ; clk        ; 3.465 ; 3.465 ; Rise       ; clk             ;
+;  result[1] ; clk        ; 3.578 ; 3.578 ; Rise       ; clk             ;
+;  result[2] ; clk        ; 3.468 ; 3.468 ; Rise       ; clk             ;
+;  result[3] ; clk        ; 3.622 ; 3.622 ; Rise       ; clk             ;
+;  result[4] ; clk        ; 3.625 ; 3.625 ; Rise       ; clk             ;
+;  result[5] ; clk        ; 3.551 ; 3.551 ; Rise       ; clk             ;
+;  result[6] ; clk        ; 3.877 ; 3.877 ; Rise       ; clk             ;
+;  result[7] ; clk        ; 3.501 ; 3.501 ; Rise       ; clk             ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; select     ; result[0]   ; 11.230 ; 11.230 ; 11.230 ; 11.230 ;
+; select     ; result[1]   ; 11.550 ; 11.550 ; 11.550 ; 11.550 ;
+; select     ; result[2]   ; 11.235 ; 11.235 ; 11.235 ; 11.235 ;
+; select     ; result[3]   ; 10.767 ; 10.767 ; 10.767 ; 10.767 ;
+; select     ; result[4]   ; 10.775 ; 10.775 ; 10.775 ; 10.775 ;
+; select     ; result[5]   ; 10.770 ; 10.770 ; 10.770 ; 10.770 ;
+; select     ; result[6]   ; 11.242 ; 11.242 ; 11.242 ; 11.242 ;
+; select     ; result[7]   ; 11.079 ; 11.079 ; 11.079 ; 11.079 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; select     ; result[0]   ; 5.268 ; 5.268 ; 5.268 ; 5.268 ;
+; select     ; result[1]   ; 5.384 ; 5.384 ; 5.384 ; 5.384 ;
+; select     ; result[2]   ; 5.270 ; 5.270 ; 5.270 ; 5.270 ;
+; select     ; result[3]   ; 5.082 ; 5.082 ; 5.082 ; 5.082 ;
+; select     ; result[4]   ; 5.091 ; 5.091 ; 5.091 ; 5.091 ;
+; select     ; result[5]   ; 5.083 ; 5.083 ; 5.083 ; 5.083 ;
+; select     ; result[6]   ; 5.276 ; 5.276 ; 5.276 ; 5.276 ;
+; select     ; result[7]   ; 5.201 ; 5.201 ; 5.201 ; 5.201 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 11605    ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 11605    ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 5     ; 5    ;
+; Unconstrained Input Port Paths  ; 92    ; 92   ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 96    ; 96   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Aug 24 13:55:45 2020
+Info: Command: quartus_sta WaveformGenerator -c WaveformGenerator
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 125 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'WaveformGenerator.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -7.866
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -7.866      -225.070 clk 
+Info (332146): Worst-case hold slack is 0.460
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.460         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.814
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.814      -167.063 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.011
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.011       -32.143 clk 
+Info (332146): Worst-case hold slack is 0.203
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.203         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.423
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.423      -134.300 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4554 megabytes
+    Info: Processing ended: Mon Aug 24 13:55:47 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

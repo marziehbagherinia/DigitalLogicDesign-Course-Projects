@@ -1,0 +1,125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\Desktop\Presentation1\LAB2\simulation\qsim
+vFreqRegulator
+Z1 Ik`OcK3?4KbPn^z6ia04c[0
+Z2 VW=8WLjGYHAiUK4Bf_79fI2
+Z3 dC:\Users\ASUS\Desktop\LAB2\FrequencyRegulator\simulation\qsim
+Z4 w1597739011
+Z5 8C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vo
+Z6 FC:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@freq@regulator
+Z10 !s100 Y[cm>=Qc_QXgG]>?0E1Bf1
+Z11 !s108 1597790040.742000
+Z12 !s107 C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vo|
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vFreqRegulator_vlg_check_tst
+Z14 IzC@a1OR;^ia8LRkCf_lc]1
+Z15 VHgi7WK=22be^K_o;BMJH13
+Z16 dC:\Users\ASUS\Desktop\Presentation1\LAB2\simulation\qsim
+Z17 w1597739010
+Z18 8C:/Users/ASUS/Desktop/Presentation1/LAB2/simulation/qsim/FreqRegulator.vt
+Z19 FC:/Users/ASUS/Desktop/Presentation1/LAB2/simulation/qsim/FreqRegulator.vt
+L0 67
+R7
+r1
+31
+Z20 !s108 1597739065.973000
+Z21 !s107 C:/Users/ASUS/Desktop/Presentation1/LAB2/simulation/qsim/FreqRegulator.vt|
+Z22 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/Presentation1/LAB2/simulation/qsim/FreqRegulator.vt|
+R8
+Z23 n@freq@regulator_vlg_check_tst
+Z24 !s100 >=>i9W7`c[_YCA[2OU5^Q3
+!i10b 1
+!s85 0
+!s101 -O0
+vFreqRegulator_vlg_sample_tst
+Z25 IUj9@icT?_mBW;2:_3;C>l2
+Z26 VDJ:?HbU`hL^;mU@b8_e=o3
+R16
+R17
+R18
+R19
+L0 29
+R7
+r1
+31
+R20
+R21
+R22
+R8
+Z27 n@freq@regulator_vlg_sample_tst
+Z28 !s100 YM^Th]ZIMNCkDDU3FXXV>3
+!i10b 1
+!s85 0
+!s101 -O0
+vFreqRegulator_vlg_vec_tst
+Z29 Im?c0XSRSdo6ZVn3n7BFgY2
+Z30 VF4`<RWjCj?kVDLBhVLSZg0
+R3
+Z31 w1597754402
+Z32 8C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vt
+Z33 FC:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vt
+L0 3
+R7
+r1
+31
+R8
+Z34 n@freq@regulator_vlg_vec_tst
+!i10b 1
+Z35 !s100 4nefke17OOE^8li`mcbH<0
+!s85 0
+Z36 !s108 1597790041.073000
+Z37 !s107 C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vt|
+Z38 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vt|
+!s101 -O0
+vringOscillator
+!i10b 1
+!s100 gdC48QUCBIV8UVB1i4=V60
+Ihdjg<2WTLK4Zk]164h3Mz0
+Z39 VeV_RKo5fmbzCWCShj0dQ;1
+R3
+Z40 w1597752646
+8C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/ringOscillator.v
+FC:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/ringOscillator.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1597790041.343000
+!s107 C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/ringOscillator.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/ringOscillator.v|
+!s101 -O0
+R8
+Z41 nring@oscillator
+vtestBench
+Z42 !s100 :m]F;X2;d?=f8D>ZhXCcj2
+Z43 IiATMH[oXmTjbj=<?DM@>o1
+Z44 V[JYMY@A=Z^5U>0[I>M^a51
+R16
+Z45 w1597752689
+Z46 8C:/Users/ASUS/Desktop/LAB2/RingOscillator/TestBench.v
+Z47 FC:/Users/ASUS/Desktop/LAB2/RingOscillator/TestBench.v
+L0 3
+R7
+r1
+31
+Z48 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB2/RingOscillator/TestBench.v|
+R8
+Z49 ntest@bench
+Z50 !s108 1597754405.403000
+Z51 !s107 C:/Users/ASUS/Desktop/LAB2/RingOscillator/TestBench.v|
+!i10b 1
+!s85 0
+!s101 -O0

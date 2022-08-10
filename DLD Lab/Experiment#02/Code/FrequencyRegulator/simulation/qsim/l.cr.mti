@@ -1,0 +1,22 @@
+C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/ringOscillator.v {1 {vlog -work work C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/ringOscillator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ringOscillator
+
+Top level modules:
+	ringOscillator
+
+} {} {}} C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vo {1 {vlog -work work C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vo
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FreqRegulator
+
+Top level modules:
+	FreqRegulator
+
+} {} {}} C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vt {1 {vlog -work work C:/Users/ASUS/Desktop/LAB2/FrequencyRegulator/simulation/qsim/FreqRegulator.vt
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FreqRegulator_vlg_vec_tst
+
+Top level modules:
+	FreqRegulator_vlg_vec_tst
+
+} {} {}}

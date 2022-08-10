@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Setup 'clk'
+Slack : -11.740
+TNS   : -45.384
+
+Type  : Slow 1200mV 125C Model Setup 'DownUp'
+Slack : -9.884
+TNS   : -38.932
+
+Type  : Slow 1200mV 125C Model Hold 'DownUp'
+Slack : -5.597
+TNS   : -14.207
+
+Type  : Slow 1200mV 125C Model Hold 'clk'
+Slack : 0.857
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Recovery 'clk'
+Slack : -12.142
+TNS   : -48.568
+
+Type  : Slow 1200mV 125C Model Recovery 'DownUp'
+Slack : -9.816
+TNS   : -39.264
+
+Type  : Slow 1200mV 125C Model Removal 'DownUp'
+Slack : -2.552
+TNS   : -10.208
+
+Type  : Slow 1200mV 125C Model Removal 'clk'
+Slack : 3.693
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'DownUp'
+Slack : -3.878
+TNS   : -139.501
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -8.948
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -10.417
+TNS   : -40.226
+
+Type  : Slow 1200mV -40C Model Setup 'DownUp'
+Slack : -8.812
+TNS   : -34.545
+
+Type  : Slow 1200mV -40C Model Hold 'DownUp'
+Slack : -5.111
+TNS   : -13.603
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : 0.727
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'clk'
+Slack : -10.702
+TNS   : -42.808
+
+Type  : Slow 1200mV -40C Model Recovery 'DownUp'
+Slack : -8.620
+TNS   : -34.480
+
+Type  : Slow 1200mV -40C Model Removal 'DownUp'
+Slack : -2.505
+TNS   : -10.020
+
+Type  : Slow 1200mV -40C Model Removal 'clk'
+Slack : 3.136
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'DownUp'
+Slack : -3.329
+TNS   : -115.958
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -8.140
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -5.163
+TNS   : -19.971
+
+Type  : Fast 1200mV -40C Model Setup 'DownUp'
+Slack : -4.407
+TNS   : -17.330
+
+Type  : Fast 1200mV -40C Model Hold 'DownUp'
+Slack : -2.417
+TNS   : -6.071
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'clk'
+Slack : -5.425
+TNS   : -21.700
+
+Type  : Fast 1200mV -40C Model Recovery 'DownUp'
+Slack : -4.394
+TNS   : -17.576
+
+Type  : Fast 1200mV -40C Model Removal 'DownUp'
+Slack : -1.003
+TNS   : -4.012
+
+Type  : Fast 1200mV -40C Model Removal 'clk'
+Slack : 1.659
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'DownUp'
+Slack : -3.000
+TNS   : -56.393
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -7.144
+
+------------------------------------------------------------

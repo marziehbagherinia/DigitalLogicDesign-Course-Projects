@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\Desktop\LAB3\FunctionGenerator\FunctionGenerator\simulation\qsim
+vWaveformGenerator
+Z1 IdzW]:CXaJ;IPU4iNPN8j32
+Z2 VL=5=76WXc;YH9cFg[^V421
+Z3 dC:\Users\ASUS\Desktop\LAB3\FunctionGenerator\FunctionGenerator\simulation\qsim
+Z4 w1598311404
+Z5 8C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vo
+Z6 FC:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@waveform@generator
+Z10 !s100 45:oNLN^IQ]AlT3af<R0f2
+Z11 !s108 1598311490.700000
+Z12 !s107 C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vo|
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator_vlg_check_tst
+Z14 I2?X9f1YNRo0fD77JI[0GK0
+Z15 VJQQ=zjO1b4C_?mc?>U]0f2
+R3
+Z16 w1598311403
+Z17 8C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vt
+Z18 FC:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vt
+L0 61
+R7
+r1
+31
+Z19 !s108 1598311490.787000
+Z20 !s107 C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vt|
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vt|
+R8
+Z22 n@waveform@generator_vlg_check_tst
+Z23 !s100 c29W@<bV7cO??4QjBDW4Y0
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator_vlg_sample_tst
+Z24 IL=ljjWV=]GO6MSPP_4o=;1
+Z25 V2kE=eTIZBiMEGON4^lGAL2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R8
+Z26 n@waveform@generator_vlg_sample_tst
+Z27 !s100 g`z_h3fmBZ72]YdkU<TX02
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator_vlg_vec_tst
+!i10b 1
+!s100 o>CUZDU<F[ZMo6<Aok26P2
+I?^OX@`<2<3JaM;<QWUNdJ2
+Z28 VSga>Wb1zH?g;UD8ZEBgPl0
+R3
+w1598311715
+R17
+R18
+L0 30
+R7
+r1
+!s85 0
+31
+!s108 1598311719.603000
+!s107 C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FunctionGenerator/simulation/qsim/WaveformGenerator.vt|
+R21
+!s101 -O0
+R8
+Z29 n@waveform@generator_vlg_vec_tst

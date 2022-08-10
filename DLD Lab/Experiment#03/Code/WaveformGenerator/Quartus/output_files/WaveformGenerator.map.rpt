@@ -1,0 +1,590 @@
+Analysis & Synthesis report for WaveformGenerator
+Mon Aug 24 13:55:38 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated
+ 15. Parameter Settings for User Entity Instance: BUSMUX:inst3
+ 16. Parameter Settings for User Entity Instance: ROM_1:inst2|altsyncram:altsyncram_component
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Aug 24 13:55:38 2020           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; WaveformGenerator                               ;
+; Top-level Entity Name              ; WaveformGenerator                               ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 162                                             ;
+;     Total combinational functions  ; 162                                             ;
+;     Dedicated logic registers      ; 76                                              ;
+; Total registers                    ; 76                                              ;
+; Total pins                         ; 14                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 8,192                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C5AF256A7       ;                    ;
+; Top-level entity name                                                      ; WaveformGenerator  ; WaveformGenerator  ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------+---------+
+; WaveformGenerator.bdf            ; yes             ; User Block Diagram/Schematic File      ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/WaveformGenerator.bdf  ;         ;
+; waveform_generator.v             ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/waveform_generator.v   ;         ;
+; triangle_wave.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/triangle_wave.v        ;         ;
+; square_wave.v                    ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/square_wave.v          ;         ;
+; sine_wave.v                      ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/sine_wave.v            ;         ;
+; sineSquare_wave.v                ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/sineSquare_wave.v      ;         ;
+; sawTooth_wave.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/sawTooth_wave.v        ;         ;
+; rhomboid_wave.v                  ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/rhomboid_wave.v        ;         ;
+; full_wave.v                      ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/full_wave.v            ;         ;
+; counter_1.v                      ; yes             ; User Verilog HDL File                  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/counter_1.v            ;         ;
+; ROM_1.v                          ; yes             ; User Wizard-Generated File             ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/ROM_1.v                ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf                ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc               ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf               ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc            ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc                ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc              ;         ;
+; altshift.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc              ;         ;
+; db/mux_smc.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/db/mux_smc.tdf         ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf            ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc     ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc            ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc             ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc              ;         ;
+; db/altsyncram_e781.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/db/altsyncram_e781.tdf ;         ;
+; arbitrary.mif                    ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/arbitrary.mif          ;         ;
++----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 162   ;
+;                                             ;       ;
+; Total combinational functions               ; 162   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 41    ;
+;     -- 3 input functions                    ; 75    ;
+;     -- <=2 input functions                  ; 46    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 88    ;
+;     -- arithmetic mode                      ; 74    ;
+;                                             ;       ;
+; Total registers                             ; 76    ;
+;     -- Dedicated logic registers            ; 76    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 14    ;
+; Total memory bits                           ; 8192  ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 84    ;
+; Total fan-out                               ; 796   ;
+; Average fan-out                             ; 3.06  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                  ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                           ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------+
+; |WaveformGenerator                        ; 162 (1)           ; 76 (0)       ; 8192        ; 0            ; 0       ; 0         ; 14   ; 0            ; |WaveformGenerator                                                                            ; work         ;
+;    |ROM_1:inst2|                          ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|ROM_1:inst2                                                                ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|ROM_1:inst2|altsyncram:altsyncram_component                                ; work         ;
+;          |altsyncram_e781:auto_generated| ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated ; work         ;
+;    |busmux:inst3|                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|busmux:inst3                                                               ; work         ;
+;       |lpm_mux:$00000|                    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|busmux:inst3|lpm_mux:$00000                                                ; work         ;
+;          |mux_smc:auto_generated|         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|busmux:inst3|lpm_mux:$00000|mux_smc:auto_generated                         ; work         ;
+;    |counter_1:inst1|                      ; 14 (14)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|counter_1:inst1                                                            ; work         ;
+;    |waveform_generator:inst|              ; 139 (49)          ; 66 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|waveform_generator:inst                                                    ; work         ;
+;       |full_wave:fw|                      ; 24 (24)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|waveform_generator:inst|full_wave:fw                                       ; work         ;
+;       |rhomboid_wave:rw|                  ; 16 (16)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|waveform_generator:inst|rhomboid_wave:rw                                   ; work         ;
+;       |sineSquare_wave:sw4|               ; 25 (25)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|waveform_generator:inst|sineSquare_wave:sw4                                ; work         ;
+;       |sine_wave:sw|                      ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|waveform_generator:inst|sine_wave:sw                                       ; work         ;
+;       |square_wave:sw2|                   ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|waveform_generator:inst|square_wave:sw2                                    ; work         ;
+;       |triangle_wave:tw|                  ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WaveformGenerator|waveform_generator:inst|triangle_wave:tw                                   ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                       ;
++---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
+; Name                                                                                  ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF           ;
++---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
+; ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 1024         ; 8            ; --           ; --           ; 8192 ; arbitrary.mif ;
++---------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                         ;
++--------+--------------+---------+--------------+--------------+--------------------------------+--------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                ; IP Include File                                              ;
++--------+--------------+---------+--------------+--------------+--------------------------------+--------------------------------------------------------------+
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |WaveformGenerator|ROM_1:inst2 ; C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/ROM_1.v ;
++--------+--------------+---------+--------------+--------------+--------------------------------+--------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                             ;
++------------------------------------------------------------+-------------------------------------------------------------------+
+; Register name                                              ; Reason for Removal                                                ;
++------------------------------------------------------------+-------------------------------------------------------------------+
+; waveform_generator:inst|rhomboid_wave:rw|toggle            ; Merged with waveform_generator:inst|sineSquare_wave:sw4|toggle    ;
+; waveform_generator:inst|square_wave:sw2|square_out[1..7]   ; Merged with waveform_generator:inst|square_wave:sw2|square_out[0] ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[15]   ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[15]     ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[15]          ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[15]     ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[14]   ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[14]     ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[14]          ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[14]     ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[13]   ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[13]     ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[13]          ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[13]     ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[12]   ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[12]     ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[12]          ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[12]     ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[11]   ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[11]     ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[11]          ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[11]     ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[10]   ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[10]     ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[10]          ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[10]     ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[9]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[9]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[9]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[9]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[8]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[8]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[8]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[8]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[7]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[7]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[7]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[7]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[6]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[6]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[6]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[6]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[5]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[5]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[5]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[5]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[4]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[4]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[4]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[4]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[3]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[3]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[3]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[3]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[2]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[2]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[2]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[2]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[1]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[1]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[1]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[1]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_sine[0]    ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[0]      ;
+; waveform_generator:inst|sine_wave:sw|pre_sine[0]           ; Merged with waveform_generator:inst|full_wave:fw|pre_sine[0]      ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[15] ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[15]   ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[15]        ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[15]   ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[14] ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[14]   ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[14]        ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[14]   ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[13] ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[13]   ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[13]        ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[13]   ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[12] ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[12]   ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[12]        ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[12]   ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[11] ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[11]   ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[11]        ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[11]   ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[10] ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[10]   ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[10]        ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[10]   ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[9]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[9]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[9]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[9]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[8]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[8]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[8]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[8]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[7]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[7]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[7]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[7]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[6]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[6]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[6]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[6]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[5]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[5]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[5]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[5]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[4]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[4]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[4]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[4]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[3]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[3]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[3]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[3]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[2]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[2]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[2]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[2]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[1]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[1]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[1]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[1]    ;
+; waveform_generator:inst|sineSquare_wave:sw4|pre_cosine[0]  ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[0]    ;
+; waveform_generator:inst|sine_wave:sw|pre_cosine[0]         ; Merged with waveform_generator:inst|full_wave:fw|pre_cosine[0]    ;
+; Total Number of Removed Registers = 72                     ;                                                                   ;
++------------------------------------------------------------+-------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 76    ;
+; Number of registers using Synchronous Clear  ; 18    ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------+
+; Inverted Register Statistics                                  ;
++-----------------------------------------------------+---------+
+; Inverted Register                                   ; Fan out ;
++-----------------------------------------------------+---------+
+; waveform_generator:inst|full_wave:fw|pre_cosine[14] ; 2       ;
+; waveform_generator:inst|full_wave:fw|pre_cosine[13] ; 2       ;
+; waveform_generator:inst|full_wave:fw|pre_cosine[12] ; 2       ;
+; waveform_generator:inst|full_wave:fw|pre_cosine[10] ; 2       ;
+; waveform_generator:inst|full_wave:fw|pre_cosine[8]  ; 2       ;
+; waveform_generator:inst|full_wave:fw|pre_cosine[5]  ; 1       ;
+; waveform_generator:inst|full_wave:fw|pre_cosine[4]  ; 1       ;
+; waveform_generator:inst|sineSquare_wave:sw4|toggle  ; 18      ;
+; Total number of inverted registers = 8              ;         ;
++-----------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |WaveformGenerator|waveform_generator:inst|triangle_wave:tw|triangle_out[0] ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |WaveformGenerator|waveform_generator:inst|wave_out[2]                      ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |WaveformGenerator|waveform_generator:inst|rhomboid_wave:rw|rhomboid_out[2] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Source assignments for ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------+
+; Assignment                      ; Value              ; From ; To                                  ;
++---------------------------------+--------------------+------+-------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
++---------------------------------+--------------------+------+-------------------------------------+
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst3 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 8     ; Untyped                          ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM_1:inst2|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------+
+; Parameter Name                     ; Value                ; Type                         ;
++------------------------------------+----------------------+------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                   ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                 ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                 ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE               ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                      ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                      ;
+; WIDTH_A                            ; 8                    ; Signed Integer               ;
+; WIDTHAD_A                          ; 10                   ; Signed Integer               ;
+; NUMWORDS_A                         ; 1024                 ; Signed Integer               ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                      ;
+; WIDTH_B                            ; 1                    ; Untyped                      ;
+; WIDTHAD_B                          ; 1                    ; Untyped                      ;
+; NUMWORDS_B                         ; 1                    ; Untyped                      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                      ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer               ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                      ;
+; BYTE_SIZE                          ; 8                    ; Untyped                      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                      ;
+; INIT_FILE                          ; arbitrary.mif        ; Untyped                      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                      ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                      ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                      ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                      ;
+; CBXI_PARAMETER                     ; altsyncram_e781      ; Untyped                      ;
++------------------------------------+----------------------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                        ;
++-------------------------------------------+---------------------------------------------+
+; Name                                      ; Value                                       ;
++-------------------------------------------+---------------------------------------------+
+; Number of entity instances                ; 1                                           ;
+; Entity Instance                           ; ROM_1:inst2|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                         ;
+;     -- WIDTH_A                            ; 8                                           ;
+;     -- NUMWORDS_A                         ; 1024                                        ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                ;
+;     -- WIDTH_B                            ; 1                                           ;
+;     -- NUMWORDS_B                         ; 1                                           ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                      ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                   ;
++-------------------------------------------+---------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Aug 24 13:55:34 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WaveformGenerator -c WaveformGenerator
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file waveformgenerator.bdf
+    Info (12023): Found entity 1: WaveformGenerator
+Info (12021): Found 1 design units, including 1 entities, in source file waveform_generator.v
+    Info (12023): Found entity 1: waveform_generator
+Info (12021): Found 1 design units, including 1 entities, in source file triangle_wave.v
+    Info (12023): Found entity 1: triangle_wave
+Info (12021): Found 1 design units, including 1 entities, in source file square_wave.v
+    Info (12023): Found entity 1: square_wave
+Info (12021): Found 1 design units, including 1 entities, in source file sine_wave.v
+    Info (12023): Found entity 1: sine_wave
+Info (12021): Found 1 design units, including 1 entities, in source file sinesquare_wave.v
+    Info (12023): Found entity 1: sineSquare_wave
+Info (12021): Found 1 design units, including 1 entities, in source file sawtooth_wave.v
+    Info (12023): Found entity 1: sawTooth_wave
+Info (12021): Found 1 design units, including 1 entities, in source file rhomboid_wave.v
+    Info (12023): Found entity 1: rhomboid_wave
+Info (12021): Found 1 design units, including 1 entities, in source file full_wave.v
+    Info (12023): Found entity 1: full_wave
+Info (12021): Found 1 design units, including 1 entities, in source file counter_1.v
+    Info (12023): Found entity 1: counter_1
+Info (12021): Found 1 design units, including 1 entities, in source file rom_1.v
+    Info (12023): Found entity 1: ROM_1
+Info (12127): Elaborating entity "WaveformGenerator" for the top level hierarchy
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst3"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst3"
+Info (12133): Instantiated megafunction "BUSMUX:inst3" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "8"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst3|lpm_mux:$00000"
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst3|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst3"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_smc.tdf
+    Info (12023): Found entity 1: mux_smc
+Info (12128): Elaborating entity "mux_smc" for hierarchy "BUSMUX:inst3|lpm_mux:$00000|mux_smc:auto_generated"
+Info (12128): Elaborating entity "waveform_generator" for hierarchy "waveform_generator:inst"
+Info (12128): Elaborating entity "rhomboid_wave" for hierarchy "waveform_generator:inst|rhomboid_wave:rw"
+Warning (10230): Verilog HDL assignment warning at rhomboid_wave.v(27): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at rhomboid_wave.v(33): truncated value with size 32 to match size of target (8)
+Info (12128): Elaborating entity "sine_wave" for hierarchy "waveform_generator:inst|sine_wave:sw"
+Info (12128): Elaborating entity "square_wave" for hierarchy "waveform_generator:inst|square_wave:sw2"
+Info (12128): Elaborating entity "triangle_wave" for hierarchy "waveform_generator:inst|triangle_wave:tw"
+Info (12128): Elaborating entity "sawTooth_wave" for hierarchy "waveform_generator:inst|sawTooth_wave:sw3"
+Critical Warning (10237): Verilog HDL warning at sawTooth_wave.v(14): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead
+Info (12128): Elaborating entity "full_wave" for hierarchy "waveform_generator:inst|full_wave:fw"
+Info (12128): Elaborating entity "sineSquare_wave" for hierarchy "waveform_generator:inst|sineSquare_wave:sw4"
+Info (12128): Elaborating entity "ROM_1" for hierarchy "ROM_1:inst2"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM_1:inst2|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "ROM_1:inst2|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "ROM_1:inst2|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "arbitrary.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "1024"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "10"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_e781.tdf
+    Info (12023): Found entity 1: altsyncram_e781
+Info (12128): Elaborating entity "altsyncram_e781" for hierarchy "ROM_1:inst2|altsyncram:altsyncram_component|altsyncram_e781:auto_generated"
+Info (12128): Elaborating entity "counter_1" for hierarchy "counter_1:inst1"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 172 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4611 megabytes
+    Info: Processing ended: Mon Aug 24 13:55:38 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+

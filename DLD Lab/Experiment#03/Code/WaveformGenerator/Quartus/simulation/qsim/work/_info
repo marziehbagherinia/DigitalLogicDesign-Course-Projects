@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\Desktop\LAB3\WaveformGenerator\Quartus\simulation\qsim
+vWaveformGenerator
+Z1 Ij5nE2hnI`F=8N;fN=ZCo43
+Z2 VA=QnJG@<[iWU[:P08ZkWP2
+Z3 dC:\Users\ASUS\Desktop\LAB3\WaveformGenerator\Quartus\simulation\qsim
+Z4 w1598302642
+Z5 8C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/simulation/qsim/WaveformGenerator.vo
+Z6 FC:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/simulation/qsim/WaveformGenerator.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@waveform@generator
+Z10 !s100 jeSdG0PUFNV7k0PKQAXc:3
+Z11 !s108 1598302775.512000
+Z12 !s107 C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/simulation/qsim/WaveformGenerator.vo|
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/simulation/qsim/WaveformGenerator.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator_vlg_check_tst
+Z14 I50EJ;BLm6aCYYYMXh?G4_2
+Z15 VlSSHfOUnXOf7@4AN`n2hF1
+R3
+Z16 w1598302641
+Z17 8WaveformGenerator.vt
+Z18 FWaveformGenerator.vt
+L0 63
+R7
+r1
+31
+Z19 !s108 1598302643.551000
+Z20 !s107 WaveformGenerator.vt|
+Z21 !s90 -work|work|WaveformGenerator.vt|
+R8
+Z22 n@waveform@generator_vlg_check_tst
+Z23 !s100 lFfiPRZ7z=56ln@X08`zz1
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator_vlg_sample_tst
+Z24 I0giKT4QHXeXWEI3cn_LFD0
+Z25 V[<RE]ShYkP:i2fR5f32X=3
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R8
+Z26 n@waveform@generator_vlg_sample_tst
+Z27 !s100 ?<ofFKMl:UajQceGPW?TA3
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator_vlg_vec_tst
+!i10b 1
+!s100 Hz>2=iI>Ah5ZaNSm=226X0
+ImBb=m[J6h[o98KFmnM?gl3
+Z28 VSga>Wb1zH?g;UD8ZEBgPl0
+R3
+w1598302873
+Z29 8C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/simulation/qsim/WaveformGenerator.vt
+Z30 FC:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/simulation/qsim/WaveformGenerator.vt
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1598302877.115000
+!s107 C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/simulation/qsim/WaveformGenerator.vt|
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/WaveformGenerator/Quartus/simulation/qsim/WaveformGenerator.vt|
+!s101 -O0
+R8
+Z32 n@waveform@generator_vlg_vec_tst

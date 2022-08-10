@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\Desktop\LAB3\Wave\simulation\qsim
+vamplitudeSelector
+Z1 !s100 gWHYaeHX4iL1l_P1E10o_0
+Z2 IJ?QkD[IZPYGaTGm6MYhA;2
+Z3 VE_=<77k58J@g85F^^5^g=3
+Z4 dC:\Users\ASUS\Desktop\LAB3\AmplitudeSelector
+Z5 w1598273267
+Z6 8C:/Users/ASUS/Desktop/LAB3/AmplitudeSelector/AmplitudeSelector.v
+Z7 FC:/Users/ASUS/Desktop/LAB3/AmplitudeSelector/AmplitudeSelector.v
+L0 3
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/AmplitudeSelector/AmplitudeSelector.v|
+Z10 o-work work -O0
+Z11 namplitude@selector
+Z12 !s108 1598303499.825000
+Z13 !s107 C:/Users/ASUS/Desktop/LAB3/AmplitudeSelector/AmplitudeSelector.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vfreqRegulator
+Z14 !s100 FhZD]LQC236]hfd[XgK@61
+Z15 I66bA2KkV9<W[Qf6gd]g]N0
+Z16 V9bO>9@o7hcSQf2VRoSJJE2
+R4
+Z17 w1598272919
+R6
+R7
+L0 3
+R8
+r1
+31
+R9
+R10
+Z18 nfreq@regulator
+Z19 !s108 1598272923.125000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vtestBench
+!i10b 1
+!s100 cdBMcz7]<=6^]5o]=UO>f1
+Io3P9afAFj0m^7DXdkgXRm1
+Z20 VR_NLI_Y@O9:IfB9Gi;7QD0
+R4
+w1598303566
+Z21 8C:/Users/ASUS/Desktop/LAB3/AmplitudeSelector/TestBench.v
+Z22 FC:/Users/ASUS/Desktop/LAB3/AmplitudeSelector/TestBench.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1598303568.734000
+!s107 C:/Users/ASUS/Desktop/LAB3/AmplitudeSelector/TestBench.v|
+Z23 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/AmplitudeSelector/TestBench.v|
+!s101 -O0
+R10
+Z24 ntest@bench
+vTestBench_2
+Z25 I?VE@T?Y[02^0heYmTb;lV0
+Z26 VboaM_gB1?MIo_G5`_2BoZ2
+R4
+Z27 w1598207258
+Z28 8C:/Users/ASUS/Desktop/LAB3/FrequencyRegulator/TestBench_2.v
+Z29 FC:/Users/ASUS/Desktop/LAB3/FrequencyRegulator/TestBench_2.v
+L0 3
+R8
+r1
+31
+R10
+Z30 n@test@bench_2
+Z31 !s100 MV6M?3l?VNc2F6I]ZRn_m2
+Z32 !s108 1598272716.472000
+Z33 !s107 C:/Users/ASUS/Desktop/LAB3/FrequencyRegulator/TestBench_2.v|
+Z34 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/FrequencyRegulator/TestBench_2.v|
+!i10b 1
+!s85 0
+!s101 -O0

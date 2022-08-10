@@ -1,0 +1,145 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\Desktop\Proj\simulation\qsim
+vcounterDIv_vlg_vec_tst
+Z1 !s100 JbmkZeoBl`CFZ7L8:B24<2
+Z2 I[VV`4QJioBoVhMh32WMLD3
+Z3 Vf^?E1SFN>Tj]hG[<fW8I>2
+Z4 dC:\Users\ASUS\Desktop\Proj\simulation\qsim
+Z5 w1597224595
+Z6 8C:/Users/ASUS/Desktop/Proj/simulation/qsim/Waveform2.vwf.vt
+Z7 FC:/Users/ASUS/Desktop/Proj/simulation/qsim/Waveform2.vwf.vt
+L0 4
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/Proj/simulation/qsim/Waveform2.vwf.vt|
+Z10 o-work work -O0
+Z11 ncounter@d@iv_vlg_vec_tst
+Z12 !s108 1597237276.912000
+Z13 !s107 C:/Users/ASUS/Desktop/Proj/simulation/qsim/Waveform2.vwf.vt|
+!i10b 1
+!s85 0
+!s101 -O0
+vCounterDivider
+Z14 !s100 FL7zB<RW9:8Nfh@Z2A5EG2
+Z15 IdISn>8Th;ZbOA^]ZY:aNi1
+Z16 ViSZMLDacc<_ejNZX^UZIn1
+R4
+Z17 w1597235270
+Z18 8C:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vo
+Z19 FC:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vo
+L0 3
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vo|
+R10
+Z21 n@counter@divider
+Z22 !s108 1597237276.646000
+Z23 !s107 C:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vCounterDivider_tst
+Z24 !s100 MHhVXX7g1?4;7OCCdLITF1
+Z25 Igh6[k8=]M6A]C8RnP8@ae3
+Z26 VQlRgO6C8>]Vd@K3XQ2Xda0
+R4
+Z27 w1597237249
+Z28 8C:/Users/ASUS/Desktop/Proj/simulation/qsim/TestBench_2.v
+Z29 FC:/Users/ASUS/Desktop/Proj/simulation/qsim/TestBench_2.v
+L0 2
+R8
+r1
+31
+Z30 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/Proj/simulation/qsim/TestBench_2.v|
+R10
+Z31 n@counter@divider_tst
+!i10b 1
+!s85 0
+Z32 !s108 1597237276.988000
+Z33 !s107 C:/Users/ASUS/Desktop/Proj/simulation/qsim/TestBench_2.v|
+!s101 -O0
+vCounterDivider_vlg_check_tst
+Z34 I]@Wdd8[j:Defzl7=1bZ6N3
+Z35 VBbeNTEZ<;bDF4i5g=BG0j1
+R4
+Z36 w1597235112
+Z37 8C:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vt
+Z38 FC:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vt
+L0 52
+R8
+r1
+31
+Z39 !s108 1597235120.044000
+Z40 !s107 C:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vt|
+Z41 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vt|
+R10
+Z42 n@counter@divider_vlg_check_tst
+Z43 !s100 oPQ?b49`=7]JdL2TL^G:U2
+!i10b 1
+!s85 0
+!s101 -O0
+vCounterDivider_vlg_sample_tst
+Z44 IM2R2:UO@OY01Qj>mf0^`a0
+Z45 VVia:aXZ^^F4m^e<K0j=EF2
+R4
+R36
+R37
+R38
+L0 2
+R8
+r1
+31
+R39
+R40
+R41
+R10
+Z46 n@counter@divider_vlg_sample_tst
+Z47 !s100 h^1DTYH5LmSLLzOOaAO<<2
+!i10b 1
+!s85 0
+!s101 -O0
+vCounterDivider_vlg_vec_tst
+!i10b 1
+!s100 Jo6a4;i3L=`Ag0?STS<Hj1
+IAoZBHhk@gdnk]YSH=XLJR1
+Z48 VcQ?lZE8_mF36`=;D<z42G3
+R4
+w1597237285
+R37
+R38
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1597237290.278000
+!s107 C:/Users/ASUS/Desktop/Proj/simulation/qsim/CounterDivider.vt|
+R41
+!s101 -O0
+R10
+Z49 n@counter@divider_vlg_vec_tst
+vRingOscillator
+Z50 !s100 8Q@NTWejlc>UZ70MN3NcT0
+Z51 InRTeMNzaSP^O^c4Q1C@aJ1
+Z52 V21UgDc`RWA=7BO<IZO`D]0
+R4
+Z53 w1597096411
+Z54 8C:/Users/ASUS/Desktop/Proj/simulation/qsim/RingOscillator.v
+Z55 FC:/Users/ASUS/Desktop/Proj/simulation/qsim/RingOscillator.v
+L0 2
+R8
+r1
+31
+Z56 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/Proj/simulation/qsim/RingOscillator.v|
+R10
+Z57 n@ring@oscillator
+Z58 !s108 1597237276.821000
+Z59 !s107 C:/Users/ASUS/Desktop/Proj/simulation/qsim/RingOscillator.v|
+!i10b 1
+!s85 0
+!s101 -O0

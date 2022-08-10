@@ -1,0 +1,179 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\Desktop\LAB3\WaveformGenerator
+vfull_wave
+Z1 IB7I8Qh8H9CVlI;WloOU_K3
+Z2 V2RcHgol5WokV4YX931ML52
+Z3 dC:\Users\ASUS\Desktop\LAB33\WaveformGenerator\Modelsim
+Z4 w1598263981
+Z5 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/fullWave.v
+Z6 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/fullWave.v
+L0 3
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 08hlKUTa><2XWO@8FHF@91
+Z10 !s108 1598300746.462000
+Z11 !s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/fullWave.v|
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/fullWave.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vrhomboid_wave
+Z13 I;zI4zSPIMzB1RE;6YnU<b0
+Z14 VX4^XB?3P6hzii`:aT[1481
+R3
+Z15 w1598253569
+Z16 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/rhomboid.v
+Z17 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/rhomboid.v
+L0 3
+R7
+r1
+31
+R8
+Z18 !s100 BEBmOK4L22?B@Tg?NX9772
+Z19 !s108 1598300746.661000
+Z20 !s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/rhomboid.v|
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/rhomboid.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsawTooth_wave
+Z22 Im6UkE1`4Z1z^B_C4aB@WN3
+Z23 VK<_af4;=DijFPC>FEob[M2
+R3
+Z24 w1598254874
+Z25 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sawTooth.v
+Z26 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sawTooth.v
+L0 3
+R7
+r1
+31
+R8
+Z27 nsaw@tooth_wave
+Z28 !s100 _DM<?hdag2Ioa>:Y@zUff2
+Z29 !s108 1598300746.907000
+Z30 !s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sawTooth.v|
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sawTooth.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsine_wave
+Z32 IVomk]1h9K@3ZT0JenH_h22
+Z33 V::UNf3V<nC09zQW9n]kV`3
+R3
+Z34 w1598263582
+Z35 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sine.v
+Z36 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sine.v
+L0 3
+R7
+r1
+31
+R8
+Z37 !s100 >4N`F2[zicmYe27nCEE^W2
+Z38 !s108 1598300747.069000
+Z39 !s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sine.v|
+Z40 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sine.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsineSquare_wave
+Z41 IJA86NnzSOnnBVcnCNlVC91
+Z42 VWk@iF_zDLKb2mj_M0m`zE3
+R3
+Z43 w1598263814
+Z44 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sineSquare.v
+Z45 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sineSquare.v
+L0 3
+R7
+r1
+31
+R8
+Z46 nsine@square_wave
+Z47 !s100 ckNjRL_F>PO6;V32oJh5<1
+Z48 !s108 1598300747.252000
+Z49 !s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sineSquare.v|
+Z50 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/sineSquare.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsquare_wave
+Z51 ITTNI]oCF:UNMIdJ`5RGn[2
+Z52 V]I_5IkzKoI6AZHkL4IXL:1
+R3
+Z53 w1598265496
+Z54 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/square.v
+Z55 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/square.v
+L0 3
+R7
+r1
+31
+R8
+Z56 !s100 41BaPh@PnDR=hgUNGS`c=1
+Z57 !s108 1598300747.461000
+Z58 !s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/square.v|
+Z59 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/square.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestBench
+!i10b 1
+!s100 8K<4UL4;kT7Fk:]Tzigc61
+IC5dRbfznE=XJ7HI5HmYkX0
+Z60 VR_NLI_Y@O9:IfB9Gi;7QD0
+R3
+w1598300771
+Z61 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/testBench.v
+Z62 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/testBench.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1598300776.793000
+!s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/testBench.v|
+Z63 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/testBench.v|
+!s101 -O0
+R8
+Z64 ntest@bench
+vtriangle_wave
+Z65 Ie6?6QlMcfe^AB9_PcXFFD1
+Z66 V:W<2@jcQ1Yg<`68k32dAm2
+R3
+Z67 w1598264622
+Z68 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/triangle.v
+Z69 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/triangle.v
+L0 3
+R7
+r1
+31
+R8
+Z70 !s100 Rzgm31fW1WPzm?<K?XQYg3
+Z71 !s108 1598300748.016000
+Z72 !s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/triangle.v|
+Z73 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/triangle.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vwaveform_generator
+Z74 I3^?XT_0]W@QLO^6n8JK=[1
+Z75 VS`h;b6Ie<aaYU_bb`5FP93
+R3
+Z76 w1598265375
+Z77 8C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/waveformGenrator.v
+Z78 FC:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/waveformGenrator.v
+L0 3
+R7
+r1
+31
+R8
+!i10b 1
+Z79 !s100 R=gJe;zQa[4;m`04?B<g20
+!s85 0
+Z80 !s108 1598300748.245000
+Z81 !s107 C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/waveformGenrator.v|
+Z82 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB33/WaveformGenerator/Modelsim/waveformGenrator.v|
+!s101 -O0

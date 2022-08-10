@@ -1,0 +1,192 @@
+|FreqRegulator
+equal <= display:inst4.equal
+Init => 7408:inst5.3
+Init => 7404:inst9.2
+adjustedDiv[0] <= display:inst4.adjustedDiv[0]
+adjustedDiv[1] <= display:inst4.adjustedDiv[1]
+adjustedDiv[2] <= display:inst4.adjustedDiv[2]
+adjustedDiv[3] <= display:inst4.adjustedDiv[3]
+adjustedDiv[4] <= display:inst4.adjustedDiv[4]
+adjustedDiv[5] <= display:inst4.adjustedDiv[5]
+adjustedDiv[6] <= display:inst4.adjustedDiv[6]
+adjustedDiv[7] <= display:inst4.adjustedDiv[7]
+GN => 74193:inst2.CLR
+GN => 74193:inst1.CLR
+clk => 74193:inst1.UP
+Down => 74193:inst1.DN
+Down => 74193:inst2.DN
+clk2 => display:inst4.clk
+setPeriod[0] => display:inst4.setPeriod[0]
+setPeriod[1] => display:inst4.setPeriod[1]
+setPeriod[2] => display:inst4.setPeriod[2]
+setPeriod[3] => display:inst4.setPeriod[3]
+setPeriod[4] => display:inst4.setPeriod[4]
+setPeriod[5] => display:inst4.setPeriod[5]
+setPeriod[6] => display:inst4.setPeriod[6]
+setPeriod[7] => display:inst4.setPeriod[7]
+load <= 7408:inst5.1
+tffout <= 7404:inst8.1
+duration[0] <= display:inst4.duration[0]
+duration[1] <= display:inst4.duration[1]
+duration[2] <= display:inst4.duration[2]
+duration[3] <= display:inst4.duration[3]
+duration[4] <= display:inst4.duration[4]
+duration[5] <= display:inst4.duration[5]
+duration[6] <= display:inst4.duration[6]
+duration[7] <= display:inst4.duration[7]
+
+
+|FreqRegulator|display:inst4
+PSI => Mux0.IN2
+PSI => Mux1.IN2
+PSI => Mux2.IN2
+PSI => Mux3.IN2
+PSI => Mux4.IN2
+PSI => Mux5.IN2
+PSI => Mux6.IN2
+PSI => Mux7.IN2
+PSI => prePSI.DATAIN
+PSI => Equal0.IN1
+PSI => Equal1.IN0
+clk => calcOut_2.CLK
+clk => adjustedDiv[0]~reg0.CLK
+clk => adjustedDiv[1]~reg0.CLK
+clk => adjustedDiv[2]~reg0.CLK
+clk => adjustedDiv[3]~reg0.CLK
+clk => adjustedDiv[4]~reg0.CLK
+clk => adjustedDiv[5]~reg0.CLK
+clk => adjustedDiv[6]~reg0.CLK
+clk => adjustedDiv[7]~reg0.CLK
+clk => enable.CLK
+clk => duration[0]~reg0.CLK
+clk => duration[1]~reg0.CLK
+clk => duration[2]~reg0.CLK
+clk => duration[3]~reg0.CLK
+clk => duration[4]~reg0.CLK
+clk => duration[5]~reg0.CLK
+clk => duration[6]~reg0.CLK
+clk => duration[7]~reg0.CLK
+clk => prePSI.CLK
+rst => adjustedDiv[0]~reg0.PRESET
+rst => adjustedDiv[1]~reg0.PRESET
+rst => adjustedDiv[2]~reg0.PRESET
+rst => adjustedDiv[3]~reg0.PRESET
+rst => adjustedDiv[4]~reg0.PRESET
+rst => adjustedDiv[5]~reg0.PRESET
+rst => adjustedDiv[6]~reg0.PRESET
+rst => adjustedDiv[7]~reg0.ACLR
+rst => prePSI.ACLR
+rst => calcOut_2.ENA
+setPeriod[0] => LessThan0.IN8
+setPeriod[0] => LessThan1.IN8
+setPeriod[0] => Equal2.IN7
+setPeriod[1] => LessThan0.IN7
+setPeriod[1] => LessThan1.IN7
+setPeriod[1] => Equal2.IN6
+setPeriod[2] => LessThan0.IN6
+setPeriod[2] => LessThan1.IN6
+setPeriod[2] => Equal2.IN5
+setPeriod[3] => LessThan0.IN5
+setPeriod[3] => LessThan1.IN5
+setPeriod[3] => Equal2.IN4
+setPeriod[4] => LessThan0.IN4
+setPeriod[4] => LessThan1.IN4
+setPeriod[4] => Equal2.IN3
+setPeriod[5] => LessThan0.IN3
+setPeriod[5] => LessThan1.IN3
+setPeriod[5] => Equal2.IN2
+setPeriod[6] => LessThan0.IN2
+setPeriod[6] => LessThan1.IN2
+setPeriod[6] => Equal2.IN1
+setPeriod[7] => LessThan0.IN1
+setPeriod[7] => LessThan1.IN1
+setPeriod[7] => Equal2.IN0
+equal <= equal.DB_MAX_OUTPUT_PORT_TYPE
+duration[0] <= duration[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duration[1] <= duration[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duration[2] <= duration[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duration[3] <= duration[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duration[4] <= duration[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duration[5] <= duration[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duration[6] <= duration[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+duration[7] <= duration[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adjustedDiv[0] <= adjustedDiv[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adjustedDiv[1] <= adjustedDiv[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adjustedDiv[2] <= adjustedDiv[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adjustedDiv[3] <= adjustedDiv[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adjustedDiv[4] <= adjustedDiv[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adjustedDiv[5] <= adjustedDiv[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adjustedDiv[6] <= adjustedDiv[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adjustedDiv[7] <= adjustedDiv[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FreqRegulator|7404:inst8
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|FreqRegulator|7474:inst3
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FreqRegulator|7404:inst7
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+
+|FreqRegulator|7408:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|FreqRegulator|74193:inst2
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FreqRegulator|74193:inst1
+BON <= 28.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 44.IN0
+LDN => 43.IN0
+B => 53.IN2
+A => 52.IN2
+DN => 90.IN0
+UP => 89.IN0
+C => 54.IN2
+D => 55.IN2
+CON <= 27.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 23.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 24.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 25.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 26.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FreqRegulator|7404:inst9
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+
+

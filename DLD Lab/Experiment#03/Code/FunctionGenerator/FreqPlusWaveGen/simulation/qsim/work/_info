@@ -1,0 +1,105 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\Desktop\LAB3\FunctionGenerator\FreqPlusWaveGen\simulation\qsim
+vringOscillator
+Z1 !s100 Z4>eIiNYLWbk@A4SbeWdf1
+Z2 I;7M1N]V=]>j[M6Q80ki>N3
+Z3 VeV_RKo5fmbzCWCShj0dQ;1
+Z4 dC:\Users\ASUS\Desktop\LAB3\FunctionGenerator\FreqPlusWaveGen\simulation\qsim
+Z5 w1597752646
+Z6 8C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/ringOscillator.v
+Z7 FC:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/ringOscillator.v
+L0 3
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/ringOscillator.v|
+Z10 o-work work -O0
+Z11 nring@oscillator
+Z12 !s108 1598313245.501000
+Z13 !s107 C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/ringOscillator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator
+Z14 !s100 =2iED]@[`3QDM0MUkm8OM1
+Z15 I^6VJZZ37UOYZ;aFohXa;Q3
+Z16 VPa>abAIVkFAMfe;DXoc1o3
+R4
+Z17 w1598308648
+Z18 8C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/WaveformGenerator.vo
+Z19 FC:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/WaveformGenerator.vo
+L0 31
+R8
+r1
+31
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/WaveformGenerator.vo|
+R10
+Z21 n@waveform@generator
+!i10b 1
+!s85 0
+Z22 !s108 1598313245.562000
+Z23 !s107 C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/WaveformGenerator.vo|
+!s101 -O0
+vWaveformGenerator_vlg_check_tst
+Z24 IaV_0AnhkOU1oW[;K`lF?M2
+Z25 VlSSHfOUnXOf7@4AN`n2hF1
+R4
+Z26 w1598308647
+Z27 8WaveformGenerator.vt
+Z28 FWaveformGenerator.vt
+L0 61
+R8
+r1
+31
+Z29 !s108 1598308649.804000
+Z30 !s107 WaveformGenerator.vt|
+Z31 !s90 -work|work|WaveformGenerator.vt|
+R10
+Z32 n@waveform@generator_vlg_check_tst
+Z33 !s100 j5AS;S6BdM``a62XoTT<Q3
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator_vlg_sample_tst
+Z34 I9P?]g]onmH8dM7eLW=X^62
+Z35 V2kE=eTIZBiMEGON4^lGAL2
+R4
+R26
+R27
+R28
+L0 29
+R8
+r1
+31
+R29
+R30
+R31
+R10
+Z36 n@waveform@generator_vlg_sample_tst
+Z37 !s100 M;`HidGVjHP=G`ce5UV1X1
+!i10b 1
+!s85 0
+!s101 -O0
+vWaveformGenerator_vlg_vec_tst
+!i10b 1
+!s100 oaPa>EOk2nSDQY3_N:ODn3
+I@?_MeP8L@Y<OBQRNcTa;40
+Z38 VSga>Wb1zH?g;UD8ZEBgPl0
+R4
+w1598313241
+Z39 8C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/WaveformGenerator.vt
+Z40 FC:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/WaveformGenerator.vt
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1598313247.268000
+!s107 C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/WaveformGenerator.vt|
+Z41 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/Desktop/LAB3/FunctionGenerator/FreqPlusWaveGen/simulation/qsim/WaveformGenerator.vt|
+!s101 -O0
+R10
+Z42 n@waveform@generator_vlg_vec_tst

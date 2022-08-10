@@ -1,0 +1,155 @@
+|CounterDivider
+out0 <= 74191:inst.QA
+Init => 7408:inst5.3
+In7 => 74191:inst2.D
+In6 => 74191:inst2.C
+In5 => 74191:inst2.B
+In4 => 74191:inst2.A
+DownUp => 74191:inst2.DNUP
+DownUp => 74191:inst.DNUP
+GN => 74191:inst2.GN
+GN => 74191:inst.GN
+In3 => 74191:inst.D
+In2 => 74191:inst.C
+In1 => 74191:inst.B
+In0 => 74191:inst.A
+clk => 74191:inst.CLK
+out1 <= 74191:inst.QB
+out2 <= 74191:inst.QC
+out3 <= 74191:inst.QD
+out4 <= 74191:inst2.QA
+out5 <= 74191:inst2.QB
+out6 <= 74191:inst2.QC
+out7 <= 74191:inst2.QD
+cout <= 74191:inst.RCON
+MaxMin2 <= 74191:inst2.MXMN
+
+
+|CounterDivider|74191:inst
+clk => f74191:sub.clk
+gn => f74191:sub.gn
+ldn => f74191:sub.ldn
+dnup => f74191:sub.dnup
+d => f74191:sub.d
+c => f74191:sub.c
+b => f74191:sub.b
+a => f74191:sub.a
+qd <= f74191:sub.qd
+qc <= f74191:sub.qc
+qb <= f74191:sub.qb
+qa <= f74191:sub.qa
+mxmn <= f74191:sub.mxmn
+rcon <= f74191:sub.rcon
+
+
+|CounterDivider|74191:inst|f74191:sub
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+D => 105.IN0
+D => 111.IN0
+LDN => 105.IN1
+LDN => 91.IN1
+LDN => 69.IN1
+LDN => 60.IN1
+LDN => 59.IN1
+LDN => 71.IN1
+LDN => 98.IN1
+LDN => 112.IN1
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+C => 91.IN0
+C => 97.IN0
+B => 69.IN0
+B => 70.IN0
+A => 60.IN0
+A => 61.IN0
+GN => 116.DATAIN
+DNUP => 67.IN0
+DNUP => 63.IN1
+DNUP => 76.IN0
+DNUP => 73.IN1
+DNUP => 87.IN0
+DNUP => 86.IN1
+DNUP => 103.IN0
+DNUP => 100.IN1
+RCON <= 102.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 18.DB_MAX_OUTPUT_PORT_TYPE
+MXMN <= 114.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 16.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CounterDivider|74191:inst|f74191:sub|inhb:55
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2 => 5.IN0
+3 => 4.IN0
+
+
+|CounterDivider|7408:inst5
+1 <= 4.DB_MAX_OUTPUT_PORT_TYPE
+2 => 4.IN0
+3 => 4.IN1
+
+
+|CounterDivider|74191:inst2
+clk => f74191:sub.clk
+gn => f74191:sub.gn
+ldn => f74191:sub.ldn
+dnup => f74191:sub.dnup
+d => f74191:sub.d
+c => f74191:sub.c
+b => f74191:sub.b
+a => f74191:sub.a
+qd <= f74191:sub.qd
+qc <= f74191:sub.qc
+qb <= f74191:sub.qb
+qa <= f74191:sub.qa
+mxmn <= f74191:sub.mxmn
+rcon <= f74191:sub.rcon
+
+
+|CounterDivider|74191:inst2|f74191:sub
+QD <= 19.DB_MAX_OUTPUT_PORT_TYPE
+D => 105.IN0
+D => 111.IN0
+LDN => 105.IN1
+LDN => 91.IN1
+LDN => 69.IN1
+LDN => 60.IN1
+LDN => 59.IN1
+LDN => 71.IN1
+LDN => 98.IN1
+LDN => 112.IN1
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+C => 91.IN0
+C => 97.IN0
+B => 69.IN0
+B => 70.IN0
+A => 60.IN0
+A => 61.IN0
+GN => 116.DATAIN
+DNUP => 67.IN0
+DNUP => 63.IN1
+DNUP => 76.IN0
+DNUP => 73.IN1
+DNUP => 87.IN0
+DNUP => 86.IN1
+DNUP => 103.IN0
+DNUP => 100.IN1
+RCON <= 102.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 18.DB_MAX_OUTPUT_PORT_TYPE
+MXMN <= 114.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 16.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CounterDivider|74191:inst2|f74191:sub|inhb:55
+1 <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2 => 5.IN0
+3 => 4.IN0
+
+
