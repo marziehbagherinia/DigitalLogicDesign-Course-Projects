@@ -1,0 +1,43 @@
+E:/altera/13.0sp1/CA5/mux.sv {1 {vlog -work work -sv E:/altera/13.0sp1/CA5/mux.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module multiplexer
+
+Top level modules:
+	multiplexer
+
+} {} {}} E:/altera/13.0sp1/test/simulation/modelsim/testTB.v {1 {vlog -work work E:/altera/13.0sp1/test/simulation/modelsim/testTB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module testTB
+
+Top level modules:
+	testTB
+
+} {} {}} E:/altera/13.0sp1/CA5/shiftReg.sv {1 {vlog -work work -sv E:/altera/13.0sp1/CA5/shiftReg.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module shiftreg
+
+Top level modules:
+	shiftreg
+
+} {} {}} E:/altera/13.0sp1/CA5/controller.sv {1 {vlog -work work -sv E:/altera/13.0sp1/CA5/controller.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} E:/altera/13.0sp1/test/simulation/modelsim/test.vo {1 {vlog -work work E:/altera/13.0sp1/test/simulation/modelsim/test.vo
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} E:/altera/13.0sp1/CA5/SMBS.sv {1 {vlog -work work -sv E:/altera/13.0sp1/CA5/SMBS.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SMBSB
+
+Top level modules:
+	SMBSB
+
+} {} {}}

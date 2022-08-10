@@ -1,0 +1,153 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Marzieh\Desktop\MarziehBagheriNia-CA4\CA4_modelsim
+vcontroller
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 !s100 6F^`]Y5VGcj<mA8zXJY2T3
+Z3 InVn6e9ZcoVMID1E_;S5F;0
+Z4 VRPiD<8BDUJ?jH]d8ViP3g3
+Z5 !s105 controller_sv_unit
+S1
+Z6 dE:\altera\13.0sp1\test\simulation\modelsim
+Z7 w1577375590
+Z8 8E:/altera/13.0sp1/CA5/controller.sv
+Z9 FE:/altera/13.0sp1/CA5/controller.sv
+L0 2
+Z10 OV;L;10.1d;51
+r1
+31
+Z11 !s90 -reportprogress|300|-work|work|-sv|E:/altera/13.0sp1/CA5/controller.sv|
+Z12 o-work work -sv -O0
+Z13 !s108 1577375648.897000
+Z14 !s107 E:/altera/13.0sp1/CA5/controller.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontrollerTB
+Z15 IP_`_V80f2@D7T6JK46R>I0
+Z16 V:QKT7NW?<ko44IU5PJT6T3
+R6
+Z17 w1577373244
+Z18 8E:/altera/13.0sp1/test/simulation/modelsim/testTB.v
+Z19 FE:/altera/13.0sp1/test/simulation/modelsim/testTB.v
+L0 2
+R10
+r1
+31
+Z20 o-work work -O0
+Z21 ncontroller@t@b
+Z22 !s100 Bd3Uj9dg6S_cDGQ9j9YUT3
+Z23 !s108 1577373264.188000
+Z24 !s107 E:/altera/13.0sp1/test/simulation/modelsim/testTB.v|
+Z25 !s90 -reportprogress|300|-work|work|E:/altera/13.0sp1/test/simulation/modelsim/testTB.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmultiplexer
+R1
+Z26 !s100 Ki^_>PeW@;AGmE2W5=hB63
+Z27 I>kK58Ij^5:<n8OJE4YG@b2
+Z28 VQj5Z4T^jR3KAMIE^>6F2P0
+Z29 !s105 mux_sv_unit
+S1
+R6
+Z30 w1577366471
+Z31 8E:/altera/13.0sp1/CA5/mux.sv
+Z32 FE:/altera/13.0sp1/CA5/mux.sv
+L0 2
+R10
+r1
+31
+Z33 !s90 -reportprogress|300|-work|work|-sv|E:/altera/13.0sp1/CA5/mux.sv|
+R12
+Z34 !s108 1577375649.102000
+Z35 !s107 E:/altera/13.0sp1/CA5/mux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vshiftreg
+R1
+Z36 !s100 KX3C;iU8Un3GLif:1>L9P0
+Z37 I047@CmkbQe][GOM`kR9Vn1
+Z38 VRdHlf>1Ze;L>comhUDQQa0
+Z39 !s105 shiftReg_sv_unit
+S1
+R6
+Z40 w1577375519
+Z41 8E:/altera/13.0sp1/CA5/shiftReg.sv
+Z42 FE:/altera/13.0sp1/CA5/shiftReg.sv
+L0 2
+R10
+r1
+31
+Z43 !s90 -reportprogress|300|-work|work|-sv|E:/altera/13.0sp1/CA5/shiftReg.sv|
+R12
+!i10b 1
+!s85 0
+Z44 !s108 1577375649.291000
+Z45 !s107 E:/altera/13.0sp1/CA5/shiftReg.sv|
+!s101 -O0
+vSMBSB
+R1
+!i10b 1
+!s100 A]:1Cg[4N03^RCjiU[WHi3
+IYzHUYT0jY9a^8VEBcM0J60
+VRHe15PTA>8C7Pg2Q8bKYA2
+!s105 SMBS_sv_unit
+S1
+R6
+w1577375636
+8E:/altera/13.0sp1/CA5/SMBS.sv
+FE:/altera/13.0sp1/CA5/SMBS.sv
+L0 2
+R10
+r1
+!s85 0
+31
+!s108 1577375649.506000
+!s107 E:/altera/13.0sp1/CA5/SMBS.sv|
+!s90 -reportprogress|300|-work|work|-sv|E:/altera/13.0sp1/CA5/SMBS.sv|
+!s101 -O0
+R12
+n@s@m@b@s@b
+vtest
+Z46 !s100 ae6h;7[=TCI3]b]ICmFYg1
+Z47 I;jXV64Ide`mK>d2QUlfH@0
+Z48 VbAKQPM[h;a0Gii[cbc9aa0
+R6
+Z49 w1577372985
+Z50 8E:/altera/13.0sp1/test/simulation/modelsim/test.vo
+Z51 FE:/altera/13.0sp1/test/simulation/modelsim/test.vo
+L0 31
+R10
+r1
+31
+Z52 !s90 -reportprogress|300|-work|work|E:/altera/13.0sp1/test/simulation/modelsim/test.vo|
+R20
+Z53 !s108 1577375648.434000
+Z54 !s107 E:/altera/13.0sp1/test/simulation/modelsim/test.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestTB
+Z55 !s100 Vbd]P2gYE[gYRVme<Kk_P0
+Z56 IIEcoKSHL7QUnQOIIVCi203
+Z57 Vj45]H_g<gC]3[1?fkT`JM2
+R6
+Z58 w1577373335
+R18
+R19
+L0 2
+R10
+r1
+31
+R25
+R20
+Z59 ntest@t@b
+Z60 !s108 1577375648.687000
+R24
+!i10b 1
+!s85 0
+!s101 -O0

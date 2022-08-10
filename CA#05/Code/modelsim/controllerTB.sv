@@ -1,0 +1,17 @@
+`timescale 1ns/1ns
+module controllerTB();
+
+  wire EN, Done;
+  reg  serIn = 1;
+  reg  CLK = 1;
+  reg  RST = 0;
+  
+  controller C1(serIn, CLK, RST, EN, Done);
+  
+  always #500 CLK = ~CLK;
+  
+  initial begin RST = 1; #200 RST = 0; #50000 $stop; end
+  
+  always #2000 serIn = ~serIn;
+
+endmodule

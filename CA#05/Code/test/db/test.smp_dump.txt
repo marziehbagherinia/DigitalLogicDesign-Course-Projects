@@ -1,0 +1,8 @@
+
+State Machine - |test|controller:inst1|ps
+Name ps.011 ps.010 ps.001 ps.000 ps.100 
+ps.000 0 0 0 0 0 
+ps.001 0 0 1 1 0 
+ps.010 0 1 0 1 0 
+ps.011 1 0 0 1 0 
+ps.100 0 0 0 1 1 

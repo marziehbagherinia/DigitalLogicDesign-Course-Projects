@@ -1,0 +1,17 @@
+`timescale 1 ps/ 1 ps
+module testTB();
+  wire EN, Done;
+  reg  serIn = 1;
+  reg  CLK = 1;
+  reg  RST = 0;
+  test (
+	EN,
+	serIn,
+	CLK,
+	RST,
+	Done);
+	
+  always #500 CLK=~CLK;
+  initial begin RST=1; #200 RST=0; #50000 $stop; end
+  always #2000 serIn = ~serIn;
+endmodule

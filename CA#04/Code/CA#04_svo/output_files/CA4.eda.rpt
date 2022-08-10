@@ -1,0 +1,107 @@
+EDA Netlist Writer report for CA4
+Tue Dec 17 23:45:33 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Tue Dec 17 23:45:33 2019 ;
+; Revision Name             ; CA4                                   ;
+; Top-level Entity Name     ; CA4                                   ;
+; Family                    ; Cyclone IV GX                         ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                                 ;
++---------------------------------------------------------------------------------------------------+---------------------------------+
+; Option                                                                                            ; Setting                         ;
++---------------------------------------------------------------------------------------------------+---------------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (SystemVerilog) ;
+; Generate netlist for functional simulation only                                                   ; Off                             ;
+; Time scale                                                                                        ; 1 ps                            ;
+; Truncate long hierarchy paths                                                                     ; Off                             ;
+; Map illegal HDL characters                                                                        ; Off                             ;
+; Flatten buses into individual nodes                                                               ; Off                             ;
+; Maintain hierarchy                                                                                ; Off                             ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                             ;
+; Enable glitch filtering                                                                           ; Off                             ;
+; Do not write top level VHDL entity                                                                ; Off                             ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                             ;
+; Architecture name in VHDL output netlist                                                          ; structure                       ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                             ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                             ;
++---------------------------------------------------------------------------------------------------+---------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Simulation Generated Files                                                   ;
++------------------------------------------------------------------------------+
+; Generated Files                                                              ;
++------------------------------------------------------------------------------+
+; E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/CA4_7_1200mv_125c_slow.svo     ;
+; E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/CA4_7_1200mv_-40c_slow.svo     ;
+; E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/CA4_min_1200mv_-40c_fast.svo   ;
+; E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/CA4.svo                        ;
+; E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/CA4_7_1200mv_125c_v_slow.sdo   ;
+; E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/CA4_7_1200mv_-40c_v_slow.sdo   ;
+; E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/CA4_min_1200mv_-40c_v_fast.sdo ;
+; E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/CA4_v.sdo                      ;
++------------------------------------------------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Dec 17 23:45:31 2019
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off CA4 -c CA4
+Info (204019): Generated file CA4_7_1200mv_125c_slow.svo in folder "E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CA4_7_1200mv_-40c_slow.svo in folder "E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CA4_min_1200mv_-40c_fast.svo in folder "E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CA4.svo in folder "E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CA4_7_1200mv_125c_v_slow.sdo in folder "E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CA4_7_1200mv_-40c_v_slow.sdo in folder "E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CA4_min_1200mv_-40c_v_fast.sdo in folder "E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CA4_v.sdo in folder "E:/altera/13.0sp1/CA4_NEW/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 438 megabytes
+    Info: Processing ended: Tue Dec 17 23:45:33 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

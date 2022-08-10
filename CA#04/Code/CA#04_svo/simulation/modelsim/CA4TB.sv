@@ -1,0 +1,56 @@
+`timescale 1ns/1ns
+module CA4TB();
+  reg serIn ;
+  reg CLK ;
+  reg RST ;
+  logic [0:3][0:3] L ;
+  CA4 tc(serIn, CLK, RST, L);
+  initial begin
+    serIn = 1;
+    RST = 1;
+    CLK = 1;
+    #500 RST = 0;
+         serIn = 0;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 1;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 1;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 0;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 0;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 1;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 1;
+         CLK = 0;
+    #500 CLK = 0;
+    #500 serIn = 1;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 0;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 1;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 0;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 1;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 1;
+         CLK = 0;
+    #500 CLK = 1;
+    #500 serIn = 1;
+         CLK = 0;
+    #100 $stop;
+  end
+endmodule

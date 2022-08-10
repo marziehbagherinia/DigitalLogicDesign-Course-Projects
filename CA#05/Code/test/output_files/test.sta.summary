@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Setup 'controller:inst1|ps.000'
+Slack : -5.177
+TNS   : -142.774
+
+Type  : Slow 1200mV 125C Model Setup 'CLK'
+Slack : -1.421
+TNS   : -5.209
+
+Type  : Slow 1200mV 125C Model Hold 'CLK'
+Slack : -0.192
+TNS   : -0.368
+
+Type  : Slow 1200mV 125C Model Hold 'controller:inst1|ps.000'
+Slack : 1.008
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -12.285
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'controller:inst1|Count[0]'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'controller:inst1|ps.000'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'controller:inst1|ps.000'
+Slack : -4.215
+TNS   : -120.004
+
+Type  : Slow 1200mV -40C Model Setup 'CLK'
+Slack : -1.185
+TNS   : -4.096
+
+Type  : Slow 1200mV -40C Model Hold 'CLK'
+Slack : -0.279
+TNS   : -0.531
+
+Type  : Slow 1200mV -40C Model Hold 'controller:inst1|ps.000'
+Slack : 0.764
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -10.500
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'controller:inst1|Count[0]'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'controller:inst1|ps.000'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'controller:inst1|ps.000'
+Slack : -1.824
+TNS   : -48.991
+
+Type  : Fast 1200mV -40C Model Setup 'CLK'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'CLK'
+Slack : -0.464
+TNS   : -1.712
+
+Type  : Fast 1200mV -40C Model Hold 'controller:inst1|ps.000'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -8.203
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'controller:inst1|ps.000'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'controller:inst1|Count[0]'
+Slack : 0.417
+TNS   : 0.000
+
+------------------------------------------------------------

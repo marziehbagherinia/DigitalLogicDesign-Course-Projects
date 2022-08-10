@@ -1,0 +1,24 @@
+|test
+EN <= controller:inst1.EN
+serIn => controller:inst1.serIn
+CLK => controller:inst1.CLK
+RST => controller:inst1.RST
+Done <= controller:inst1.Done
+
+
+|test|controller:inst1
+serIn => dataSize[2].DATAIN
+serIn => dataSize[1].DATAIN
+serIn => dataSize[0].DATAIN
+serIn => dataSize[3].DATAIN
+serIn => dataSize[4].DATAIN
+serIn => dataSize[5].DATAIN
+serIn => Selector0.IN2
+serIn => Selector1.IN1
+serIn => Selector3.IN1
+CLK => ps~1.DATAIN
+RST => ps~3.DATAIN
+EN <= EN.DB_MAX_OUTPUT_PORT_TYPE
+Done <= Done.DB_MAX_OUTPUT_PORT_TYPE
+
+

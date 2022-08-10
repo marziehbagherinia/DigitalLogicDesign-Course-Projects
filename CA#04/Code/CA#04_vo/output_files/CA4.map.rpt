@@ -1,0 +1,434 @@
+Analysis & Synthesis report for CA4
+Tue Dec 17 23:29:43 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |CA4|controller:inst2|preState
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec 17 23:29:43 2019           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; CA4                                             ;
+; Top-level Entity Name              ; CA4                                             ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 243                                             ;
+;     Total combinational functions  ; 237                                             ;
+;     Dedicated logic registers      ; 10                                              ;
+; Total registers                    ; 10                                              ;
+; Total pins                         ; 20                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CGX15BF14A7     ;                    ;
+; Top-level entity name                                                      ; CA4                ; CA4                ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path         ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------+---------+
+; ca4.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/altera/13.0sp1/CA4/ca4.bdf        ;         ;
+; smbsb.sv                         ; yes             ; Auto-Found SystemVerilog HDL File        ; E:/altera/13.0sp1/CA4/smbsb.sv       ;         ;
+; multiplexer.sv                   ; yes             ; Auto-Found SystemVerilog HDL File        ; E:/altera/13.0sp1/CA4/multiplexer.sv ;         ;
+; controller.sv                    ; yes             ; Auto-Found SystemVerilog HDL File        ; E:/altera/13.0sp1/CA4/controller.sv  ;         ;
+; shiftreg.sv                      ; yes             ; Auto-Found SystemVerilog HDL File        ; E:/altera/13.0sp1/CA4/shiftreg.sv    ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------+---------+
+
+
++----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary        ;
++--------------------------+-------------------------+
+; Resource                 ; Usage                   ;
++--------------------------+-------------------------+
+; I/O pins                 ; 20                      ;
+; DSP block 9-bit elements ; 0                       ;
+; Maximum fan-out node     ; controller:inst2|SC[31] ;
+; Maximum fan-out          ; 36                      ;
+; Total fan-out            ; 733                     ;
+; Average fan-out          ; 2.55                    ;
++--------------------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; |CA4                       ; 237 (0)           ; 10 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 20   ; 0            ; |CA4                  ; work         ;
+;    |SMBSB:inst5|           ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA4|SMBSB:inst5      ; work         ;
+;    |controller:inst2|      ; 219 (219)         ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA4|controller:inst2 ; work         ;
+;    |shiftreg:inst3|        ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |CA4|shiftreg:inst3   ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------+
+; State Machine - |CA4|controller:inst2|preState                      ;
++-------------+-------------+-------------+-------------+-------------+
+; Name        ; preState.11 ; preState.10 ; preState.01 ; preState.00 ;
++-------------+-------------+-------------+-------------+-------------+
+; preState.00 ; 0           ; 0           ; 0           ; 0           ;
+; preState.01 ; 0           ; 0           ; 1           ; 1           ;
+; preState.10 ; 0           ; 1           ; 0           ; 1           ;
+; preState.11 ; 1           ; 0           ; 0           ; 1           ;
++-------------+-------------+-------------+-------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                         ;
++-----------------------------------------------------+------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal          ; Free of Timing Hazards ;
++-----------------------------------------------------+------------------------------+------------------------+
+; controller:inst2|SC[31]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[15]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[14]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[13]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[12]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[11]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[10]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[9]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[8]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[7]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[6]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[5]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[4]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[3]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[17]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[18]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[19]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[20]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[21]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[22]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[23]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[24]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[25]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[26]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[27]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[28]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[29]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[30]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[16]                             ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[2]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[1]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|SC[0]                              ; controller:inst2|preState.10 ; yes                    ;
+; controller:inst2|PLC[31]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[3]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[4]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[5]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[6]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[7]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[8]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[9]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[10]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[11]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[12]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[13]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[14]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[15]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[16]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[17]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[18]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[19]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[20]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[21]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[22]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[23]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[24]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[25]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[26]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[27]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[28]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[29]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[30]                            ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[0]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[1]                             ; controller:inst2|preState.01 ; yes                    ;
+; controller:inst2|PLC[2]                             ; controller:inst2|preState.01 ; yes                    ;
+; Number of user-specified and inferred latches = 64  ;                              ;                        ;
++-----------------------------------------------------+------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; controller:inst2|preState~4           ; Lost fanout        ;
+; controller:inst2|preState~5           ; Lost fanout        ;
+; Total Number of Removed Registers = 2 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 10    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Dec 17 23:29:41 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CA4 -c CA4
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (12019): Can't analyze file -- file controller.v is missing
+Warning (12019): Can't analyze file -- file multiplexer.v is missing
+Warning (12125): Using design file ca4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CA4
+Info (12127): Elaborating entity "CA4" for the top level hierarchy
+Warning (12125): Using design file smbsb.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: SMBSB
+Info (12128): Elaborating entity "SMBSB" for hierarchy "SMBSB:inst5"
+Warning (12125): Using design file multiplexer.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: multiplexer
+Info (12128): Elaborating entity "multiplexer" for hierarchy "multiplexer:inst"
+Warning (12125): Using design file controller.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: controller
+Info (12128): Elaborating entity "controller" for hierarchy "controller:inst2"
+Warning (10240): Verilog HDL Always Construct warning at controller.sv(5): inferring latch(es) for variable "PLC", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at controller.sv(5): inferring latch(es) for variable "SC", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "SC[0]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[1]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[2]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[3]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[4]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[5]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[6]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[7]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[8]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[9]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[10]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[11]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[12]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[13]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[14]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[15]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[16]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[17]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[18]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[19]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[20]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[21]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[22]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[23]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[24]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[25]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[26]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[27]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[28]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[29]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[30]" at controller.sv(5)
+Info (10041): Inferred latch for "SC[31]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[0]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[1]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[2]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[3]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[4]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[5]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[6]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[7]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[8]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[9]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[10]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[11]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[12]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[13]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[14]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[15]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[16]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[17]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[18]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[19]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[20]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[21]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[22]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[23]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[24]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[25]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[26]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[27]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[28]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[29]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[30]" at controller.sv(5)
+Info (10041): Inferred latch for "PLC[31]" at controller.sv(5)
+Warning (12125): Using design file shiftreg.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: shiftreg
+Info (12128): Elaborating entity "shiftreg" for hierarchy "shiftreg:inst3"
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 264 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 244 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 506 megabytes
+    Info: Processing ended: Tue Dec 17 23:29:43 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

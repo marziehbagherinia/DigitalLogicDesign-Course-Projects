@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Setup 'controller:inst2|preState.10'
+Slack : -5.067
+TNS   : -133.085
+
+Type  : Slow 1200mV 125C Model Setup 'controller:inst2|preState.01'
+Slack : -4.835
+TNS   : -129.268
+
+Type  : Slow 1200mV 125C Model Setup 'clk'
+Slack : -3.148
+TNS   : -9.468
+
+Type  : Slow 1200mV 125C Model Hold 'clk'
+Slack : 0.121
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Hold 'controller:inst2|preState.10'
+Slack : 0.993
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Hold 'controller:inst2|preState.01'
+Slack : 1.696
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -21.570
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'controller:inst2|preState.10'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'controller:inst2|preState.01'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'controller:inst2|preState.10'
+Slack : -4.140
+TNS   : -109.601
+
+Type  : Slow 1200mV -40C Model Setup 'controller:inst2|preState.01'
+Slack : -4.132
+TNS   : -107.001
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -2.486
+TNS   : -7.578
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : 0.009
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'controller:inst2|preState.10'
+Slack : 0.857
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'controller:inst2|preState.01'
+Slack : 1.416
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -18.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'controller:inst2|preState.10'
+Slack : 0.254
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'controller:inst2|preState.01'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'controller:inst2|preState.10'
+Slack : -1.799
+TNS   : -44.190
+
+Type  : Fast 1200mV -40C Model Setup 'controller:inst2|preState.01'
+Slack : -1.716
+TNS   : -42.285
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -0.666
+TNS   : -1.899
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : -0.205
+TNS   : -0.565
+
+Type  : Fast 1200mV -40C Model Hold 'controller:inst2|preState.10'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'controller:inst2|preState.01'
+Slack : 0.711
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -13.662
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'controller:inst2|preState.10'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'controller:inst2|preState.01'
+Slack : 0.402
+TNS   : 0.000
+
+------------------------------------------------------------

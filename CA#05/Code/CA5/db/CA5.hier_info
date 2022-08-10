@@ -1,0 +1,114 @@
+|CA5
+L0[0] <= SMBSB:inst1.L0[0]
+L0[1] <= SMBSB:inst1.L0[1]
+L0[2] <= SMBSB:inst1.L0[2]
+L0[3] <= SMBSB:inst1.L0[3]
+Zero => multiplexer:inst5.first
+serIn => multiplexer:inst5.second
+serIn => controller:inst6.serIn
+serIn => shiftreg:inst.serIn
+CLK => controller:inst6.CLK
+CLK => shiftreg:inst.clk
+RST => controller:inst6.RST
+RST => shiftreg:inst.rst
+L1[0] <= SMBSB:inst1.L1[0]
+L1[1] <= SMBSB:inst1.L1[1]
+L1[2] <= SMBSB:inst1.L1[2]
+L1[3] <= SMBSB:inst1.L1[3]
+L2[0] <= SMBSB:inst1.L2[0]
+L2[1] <= SMBSB:inst1.L2[1]
+L2[2] <= SMBSB:inst1.L2[2]
+L2[3] <= SMBSB:inst1.L2[3]
+L3[0] <= SMBSB:inst1.L3[0]
+L3[1] <= SMBSB:inst1.L3[1]
+L3[2] <= SMBSB:inst1.L3[2]
+L3[3] <= SMBSB:inst1.L3[3]
+
+
+|CA5|SMBSB:inst1
+serin => L0.DATAB
+serin => L0.DATAB
+serin => L0.DATAB
+serin => L0.DATAB
+LB[0] => Decoder0.IN1
+LB[1] => Decoder0.IN0
+PB[0] => L0.OUTPUTSELECT
+PB[0] => L0.OUTPUTSELECT
+PB[0] => L0.OUTPUTSELECT
+PB[0] => L0.OUTPUTSELECT
+PB[1] => L1.OUTPUTSELECT
+PB[1] => L1.OUTPUTSELECT
+PB[1] => L1.OUTPUTSELECT
+PB[1] => L1.OUTPUTSELECT
+PB[2] => L2.OUTPUTSELECT
+PB[2] => L2.OUTPUTSELECT
+PB[2] => L2.OUTPUTSELECT
+PB[2] => L2.OUTPUTSELECT
+PB[3] => L3.OUTPUTSELECT
+PB[3] => L3.OUTPUTSELECT
+PB[3] => L3.OUTPUTSELECT
+PB[3] => L3.OUTPUTSELECT
+L0[0] <= L0.DB_MAX_OUTPUT_PORT_TYPE
+L0[1] <= L0.DB_MAX_OUTPUT_PORT_TYPE
+L0[2] <= L0.DB_MAX_OUTPUT_PORT_TYPE
+L0[3] <= L0.DB_MAX_OUTPUT_PORT_TYPE
+L1[0] <= L1.DB_MAX_OUTPUT_PORT_TYPE
+L1[1] <= L1.DB_MAX_OUTPUT_PORT_TYPE
+L1[2] <= L1.DB_MAX_OUTPUT_PORT_TYPE
+L1[3] <= L1.DB_MAX_OUTPUT_PORT_TYPE
+L2[0] <= L2.DB_MAX_OUTPUT_PORT_TYPE
+L2[1] <= L2.DB_MAX_OUTPUT_PORT_TYPE
+L2[2] <= L2.DB_MAX_OUTPUT_PORT_TYPE
+L2[3] <= L2.DB_MAX_OUTPUT_PORT_TYPE
+L3[0] <= L3.DB_MAX_OUTPUT_PORT_TYPE
+L3[1] <= L3.DB_MAX_OUTPUT_PORT_TYPE
+L3[2] <= L3.DB_MAX_OUTPUT_PORT_TYPE
+L3[3] <= L3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CA5|multiplexer:inst5
+first => helper.DATAB
+second => helper.DATAA
+selector => helper.OUTPUTSELECT
+w <= helper.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CA5|controller:inst6
+serIn => dataSize[2].DATAIN
+serIn => dataSize[1].DATAIN
+serIn => dataSize[0].DATAIN
+serIn => dataSize[3].DATAIN
+serIn => dataSize[4].DATAIN
+serIn => dataSize[5].DATAIN
+serIn => Selector0.IN2
+serIn => Selector1.IN1
+serIn => Selector3.IN1
+CLK => ps~1.DATAIN
+RST => ps~3.DATAIN
+EN <= EN.DB_MAX_OUTPUT_PORT_TYPE
+Done <= Done.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CA5|shiftreg:inst
+serIn => srOut[5]~reg0.DATAIN
+clk => srOut[0]~reg0.CLK
+clk => srOut[1]~reg0.CLK
+clk => srOut[2]~reg0.CLK
+clk => srOut[3]~reg0.CLK
+clk => srOut[4]~reg0.CLK
+clk => srOut[5]~reg0.CLK
+en => ~NO_FANOUT~
+rst => srOut[0]~reg0.ACLR
+rst => srOut[1]~reg0.ACLR
+rst => srOut[2]~reg0.ACLR
+rst => srOut[3]~reg0.ACLR
+rst => srOut[4]~reg0.ACLR
+rst => srOut[5]~reg0.ACLR
+srOut[0] <= srOut[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+srOut[1] <= srOut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+srOut[2] <= srOut[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+srOut[3] <= srOut[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+srOut[4] <= srOut[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+srOut[5] <= srOut[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

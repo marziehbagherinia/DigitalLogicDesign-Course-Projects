@@ -1,0 +1,7 @@
+
+State Machine - |CA4|controller:inst2|preState
+Name preState.11 preState.10 preState.01 preState.00 
+preState.00 0 0 0 0 
+preState.01 0 0 1 1 
+preState.10 0 1 0 1 
+preState.11 1 0 0 1 

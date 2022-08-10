@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\altera\13.0sp1
+vCA5
+Z1 IzRDMLg8Hh54dhkkUmoHTD1
+Z2 VB71`8n8SD8kB@6:lMMmDk0
+Z3 dE:\altera\13.0sp1\CA5\simulation\modelsim
+Z4 w1577379399
+Z5 8E:/altera/13.0sp1/CA5/simulation/modelsim/CA5.vo
+Z6 FE:/altera/13.0sp1/CA5/simulation/modelsim/CA5.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@c@a5
+!i10b 1
+Z10 !s100 Hnj5LT1jNiT8e1S`R4MHN1
+!s85 0
+Z11 !s108 1577379619.674000
+Z12 !s107 E:/altera/13.0sp1/CA5/simulation/modelsim/CA5.vo|
+Z13 !s90 -reportprogress|300|-work|work|E:/altera/13.0sp1/CA5/simulation/modelsim/CA5.vo|
+!s101 -O0
+vCA5TB
+!i10b 1
+!s100 5UZg>Lgk2hI_zmGOZU8051
+I]H6Lh0a>N]4R?GTN`SQ7a1
+VFYN6TZV3`Oba<>]0e`FHA1
+R3
+w1577372066
+8E:/altera/13.0sp1/CA5/simulation/modelsim/CA5TB.v
+FE:/altera/13.0sp1/CA5/simulation/modelsim/CA5TB.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1577379619.930000
+!s107 E:/altera/13.0sp1/CA5/simulation/modelsim/CA5TB.v|
+!s90 -reportprogress|300|-work|work|E:/altera/13.0sp1/CA5/simulation/modelsim/CA5TB.v|
+!s101 -O0
+R8
+n@c@a5@t@b

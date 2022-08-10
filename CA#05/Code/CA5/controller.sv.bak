@@ -1,0 +1,70 @@
+`timescale 1ns /1ns
+module controller(input serIn, CLK, RST, output logic EN, Done);
+  logic [2:0] ps, ns;
+  integer Count = 0;
+  reg [5:0] dataSize = 6'b0;
+  always@(ps, serIn, Count)begin
+    ns = 3'b000;
+    EN = 0;
+    Done = 0;
+    case(ps)
+     0: begin
+        if(serIn)begin
+          ns = 3'b000;
+        end
+        else begin
+          ns = 3'b001;
+        end
+      end
+      1: begin
+        if(Count == 6)begin
+          ns = 3'b010;
+          EN = 1'b0;
+          Count = 0;
+        end
+        else begin
+          ns = 3'b001;
+          EN = 1;
+          Count = Count + 1;
+        end
+      end
+      2: begin
+        if(Count == 6)begin
+          ns = 3'b011;
+          Count = 0;
+        end
+        else begin
+          ns = 3'b010;
+          dataSize[Count] = serIn;
+          Count = Count + 1;
+        end
+      end
+      3: begin
+        if(Count == dataSize)begin
+          ns = 3'b100;
+          Count = 0;
+        end
+        else begin
+          ns = 3'b011;
+          Done = 1;
+          Count = Count + 1;
+        end
+      end
+      4: begin
+        if(serIn) begin
+          ns = 3'b000;
+        end
+        else begin
+          ns = 3'b011;
+       end
+      end
+    endcase
+  end
+  
+  always@(negedge CLK, posedge RST)begin
+    if(RST)
+      ps <= 3'b000;
+    else
+      ps <= ns;
+  end
+endmodule
